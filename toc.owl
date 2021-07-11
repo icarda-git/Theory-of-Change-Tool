@@ -1,0 +1,906 @@
+@prefix : <http://www.icarda.org/schemas/toc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.icarda.org/schemas/toc/> .
+
+<http://www.icarda.org/schemas/toc/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/acting_as
+:acting_as rdf:type owl:ObjectProperty ;
+           rdfs:domain :TeamMembership ;
+           rdfs:range :UserRole .
+
+
+###  http://www.icarda.org/schemas/toc/action_scope
+:action_scope rdf:type owl:ObjectProperty ;
+              rdfs:domain :Action ;
+              rdfs:range :GeoScope .
+
+
+###  http://www.icarda.org/schemas/toc/applicable_to_scope
+:applicable_to_scope rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Indicator ;
+                     rdfs:range :GeoScope .
+
+
+###  http://www.icarda.org/schemas/toc/applies_to_scope
+:applies_to_scope rdf:type owl:ObjectProperty ;
+                  rdfs:domain :InnovationPackage ;
+                  rdfs:range :GeoScope .
+
+
+###  http://www.icarda.org/schemas/toc/belongs_to_flow
+:belongs_to_flow rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :includes_toc ;
+                 rdfs:domain :TOC ;
+                 rdfs:range :TocFlow .
+
+
+###  http://www.icarda.org/schemas/toc/comment_target
+:comment_target rdf:type owl:ObjectProperty ;
+                rdfs:domain :Comment ;
+                rdfs:range owl:Thing .
+
+
+###  http://www.icarda.org/schemas/toc/commenter
+:commenter rdf:type owl:ObjectProperty ;
+           rdfs:domain :Comment ;
+           rdfs:range :ToCUser .
+
+
+###  http://www.icarda.org/schemas/toc/contributing_indicator
+:contributing_indicator rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ImpactAreaPathway ;
+                        rdfs:range :TargetIndicator .
+
+
+###  http://www.icarda.org/schemas/toc/defined_in_toc
+:defined_in_toc rdf:type owl:ObjectProperty ;
+                rdfs:domain :CausalLink ;
+                rdfs:range :TOC .
+
+
+###  http://www.icarda.org/schemas/toc/defines_causal_link
+:defines_causal_link rdf:type owl:ObjectProperty ;
+                     rdfs:domain :TOC ;
+                     rdfs:range :CausalLink .
+
+
+###  http://www.icarda.org/schemas/toc/expected_action
+:expected_action rdf:type owl:ObjectProperty ;
+                 rdfs:domain :CausalLink ;
+                 rdfs:range :Action .
+
+
+###  http://www.icarda.org/schemas/toc/for_flow
+:for_flow rdf:type owl:ObjectProperty ;
+          rdfs:domain :TocReview ;
+          rdfs:range :TocFlow .
+
+
+###  http://www.icarda.org/schemas/toc/for_programme
+:for_programme rdf:type owl:ObjectProperty ;
+               rdfs:domain :TocFlow ;
+               rdfs:range :Programme .
+
+
+###  http://www.icarda.org/schemas/toc/for_target
+:for_target rdf:type owl:ObjectProperty ;
+            rdfs:domain :Indicator ;
+            rdfs:range :Target .
+
+
+###  http://www.icarda.org/schemas/toc/for_toc
+:for_toc rdf:type owl:ObjectProperty ;
+         rdfs:domain :ReviewComment ;
+         rdfs:range :TOC .
+
+
+###  http://www.icarda.org/schemas/toc/from_reviewer
+:from_reviewer rdf:type owl:ObjectProperty ;
+               rdfs:domain :TocReview ;
+               rdfs:range :ToCUser .
+
+
+###  http://www.icarda.org/schemas/toc/geo_dimension
+:geo_dimension rdf:type owl:ObjectProperty ;
+               rdfs:domain :CausalLink ;
+               rdfs:range :GeoScope .
+
+
+###  http://www.icarda.org/schemas/toc/has_core_innovation
+:has_core_innovation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :InnovationPackage ;
+                     rdfs:range :Innovation .
+
+
+###  http://www.icarda.org/schemas/toc/has_membership
+:has_membership rdf:type owl:ObjectProperty ;
+                rdfs:domain :TocFlow ;
+                rdfs:range :TeamMembership .
+
+
+###  http://www.icarda.org/schemas/toc/has_user
+:has_user rdf:type owl:ObjectProperty ;
+          rdfs:domain :TeamMembership ;
+          rdfs:range :ToCUser .
+
+
+###  http://www.icarda.org/schemas/toc/has_work_package
+:has_work_package rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :under_programme ;
+                  rdfs:domain :Programme ;
+                  rdfs:range :WorkPackage .
+
+
+###  http://www.icarda.org/schemas/toc/impact_area_narrative
+:impact_area_narrative rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ImpactAreaTocEntity ;
+                       rdfs:range :Narrative .
+
+
+###  http://www.icarda.org/schemas/toc/impacts_target
+:impacts_target rdf:type owl:ObjectProperty ;
+                rdfs:domain :HighLevelImpact ;
+                rdfs:range :SdgTarget .
+
+
+###  http://www.icarda.org/schemas/toc/in_region
+:in_region rdf:type owl:ObjectProperty ;
+           rdfs:domain :Country ;
+           rdfs:range :Region .
+
+
+###  http://www.icarda.org/schemas/toc/in_toc
+:in_toc rdf:type owl:ObjectProperty ;
+        rdfs:domain :TocElement ;
+        rdfs:range :TOC .
+
+
+###  http://www.icarda.org/schemas/toc/includes_hli
+:includes_hli rdf:type owl:ObjectProperty ;
+              rdfs:domain :HighLevelImpactSet ;
+              rdfs:range :HighLevelImpact .
+
+
+###  http://www.icarda.org/schemas/toc/includes_hli_pathway
+:includes_hli_pathway rdf:type owl:ObjectProperty ;
+                      rdfs:domain :TocFlow ;
+                      rdfs:range :HighLevelImpactAreasPathway .
+
+
+###  http://www.icarda.org/schemas/toc/includes_hlo_pathway
+:includes_hlo_pathway rdf:type owl:ObjectProperty ;
+                      rdfs:domain :TocFlow ;
+                      rdfs:range :HighLevelOutcomesPathway .
+
+
+###  http://www.icarda.org/schemas/toc/includes_impact_area_pathway
+:includes_impact_area_pathway rdf:type owl:ObjectProperty ;
+                              rdfs:domain :HighLevelImpactAreasPathway ;
+                              rdfs:range :ImpactAreaPathway .
+
+
+###  http://www.icarda.org/schemas/toc/includes_innovation
+:includes_innovation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :InnovationPackage ;
+                     rdfs:range :Innovation .
+
+
+###  http://www.icarda.org/schemas/toc/includes_result
+:includes_result rdf:type owl:ObjectProperty ;
+                 rdfs:domain :ImpactPathway ;
+                 rdfs:range :Result .
+
+
+###  http://www.icarda.org/schemas/toc/includes_review_comment
+:includes_review_comment rdf:type owl:ObjectProperty ;
+                         rdfs:domain :TocReview ;
+                         rdfs:range :ReviewComment .
+
+
+###  http://www.icarda.org/schemas/toc/includes_sdg_indicator
+:includes_sdg_indicator rdf:type owl:ObjectProperty ;
+                        rdfs:domain :SdgTocEntity ;
+                        rdfs:range :SdgIndicator .
+
+
+###  http://www.icarda.org/schemas/toc/includes_sdg_target
+:includes_sdg_target rdf:type owl:ObjectProperty ;
+                     rdfs:domain :SdgTocEntity ;
+                     rdfs:range :SdgTarget .
+
+
+###  http://www.icarda.org/schemas/toc/includes_target
+:includes_target rdf:type owl:ObjectProperty ;
+                 rdfs:domain :ImpactAreaTocEntity ;
+                 rdfs:range :Target .
+
+
+###  http://www.icarda.org/schemas/toc/includes_toc
+:includes_toc rdf:type owl:ObjectProperty ;
+              rdfs:domain :TocFlow ;
+              rdfs:range :TOC .
+
+
+###  http://www.icarda.org/schemas/toc/includes_wp_toc
+:includes_wp_toc rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :part_of_wp_level_toc ;
+                 rdfs:domain :WorkPackageLevel ;
+                 rdfs:range :WorkPackageToc .
+
+
+###  http://www.icarda.org/schemas/toc/involves_result
+:involves_result rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TOC ;
+                 rdfs:range :Result .
+
+
+###  http://www.icarda.org/schemas/toc/link_from
+:link_from rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :CausalLink ;
+           rdfs:range :TocElement .
+
+
+###  http://www.icarda.org/schemas/toc/link_to
+:link_to rdf:type owl:ObjectProperty ;
+         rdfs:domain :CausalLink ;
+         rdfs:range :TocElement .
+
+
+###  http://www.icarda.org/schemas/toc/measured_in
+:measured_in rdf:type owl:ObjectProperty ;
+             rdfs:domain :Indicator ;
+             rdfs:range :UnitOfMeasurement .
+
+
+###  http://www.icarda.org/schemas/toc/mentions
+:mentions rdf:type owl:ObjectProperty ;
+          rdfs:domain :Comment ;
+          rdfs:range :ToCUser .
+
+
+###  http://www.icarda.org/schemas/toc/on_toc
+:on_toc rdf:type owl:ObjectProperty ;
+        rdfs:domain :ImpactPathway ;
+        rdfs:range :TOC .
+
+
+###  http://www.icarda.org/schemas/toc/parent_region
+:parent_region rdf:type owl:ObjectProperty ;
+               rdfs:domain :Region ;
+               rdfs:range :Region .
+
+
+###  http://www.icarda.org/schemas/toc/part_of_wp_level_toc
+:part_of_wp_level_toc rdf:type owl:ObjectProperty ;
+                      rdfs:domain :WorkPackageToc ;
+                      rdfs:range :WorkPackageLevel .
+
+
+###  http://www.icarda.org/schemas/toc/produced_by_programme
+:produced_by_programme rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Result ;
+                       rdfs:range :Programme .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to_impact_area
+:refers_to_impact_area rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ImpactAreaTocEntity ;
+                       rdfs:range :ImpactArea .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to_result
+:refers_to_result rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Indicator ;
+                  rdfs:range :Result .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to_sdg
+:refers_to_sdg rdf:type owl:ObjectProperty ;
+               rdfs:domain :SdgTocEntity ;
+               rdfs:range :SDG .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to_wp
+:refers_to_wp rdf:type owl:ObjectProperty ;
+              rdfs:domain :WorkPackageToc ;
+              rdfs:range :WorkPackage .
+
+
+###  http://www.icarda.org/schemas/toc/responsible_actor
+:responsible_actor rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Action ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :Actor
+                                              :ActorType
+                                            )
+                              ] .
+
+
+###  http://www.icarda.org/schemas/toc/responsible_entity
+:responsible_entity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :TocElement ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Actor
+                                               :ActorType
+                                             )
+                               ] .
+
+
+###  http://www.icarda.org/schemas/toc/result_indicator
+:result_indicator rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Result ;
+                  rdfs:range :Indicator .
+
+
+###  http://www.icarda.org/schemas/toc/review_comment
+:review_comment rdf:type owl:ObjectProperty ;
+                rdfs:domain :TocReview .
+
+
+###  http://www.icarda.org/schemas/toc/review_status
+:review_status rdf:type owl:ObjectProperty ;
+               rdfs:domain :TocReview .
+
+
+###  http://www.icarda.org/schemas/toc/targets_sdg
+:targets_sdg rdf:type owl:ObjectProperty ;
+             rdfs:domain :HighLevelImpact ;
+             rdfs:range :SDG .
+
+
+###  http://www.icarda.org/schemas/toc/under_action_area
+:under_action_area rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Programme ;
+                   rdfs:range :ActionArea .
+
+
+###  http://www.icarda.org/schemas/toc/under_assumption
+:under_assumption rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Action ;
+                  rdfs:range :Assumption .
+
+
+###  http://www.icarda.org/schemas/toc/under_programme
+:under_programme rdf:type owl:ObjectProperty ;
+                 rdfs:domain :WorkPackage ;
+                 rdfs:range :Programme .
+
+
+###  http://www.icarda.org/schemas/toc/under_sdg
+:under_sdg rdf:type owl:ObjectProperty ;
+           rdfs:domain :SdgTarget ;
+           rdfs:range :SDG .
+
+
+###  http://www.icarda.org/schemas/toc/uses_indicator
+:uses_indicator rdf:type owl:ObjectProperty ;
+                rdfs:domain :HighLevelImpact ;
+                rdfs:range :SdgIndicator .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/action_description
+:action_description rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Action ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/actor_code
+:actor_code rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Actor ;
+            rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/actor_type_code
+:actor_type_code rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ActorType ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/alphacode2
+:alphacode2 rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Country ;
+            rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/baseline
+:baseline rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Indicator ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://www.icarda.org/schemas/toc/baseline_year
+:baseline_year rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Indicator ;
+               rdfs:range xsd:int .
+
+
+###  http://www.icarda.org/schemas/toc/causal_link_narrative
+:causal_link_narrative rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :CausalLink ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/flow_identifier
+:flow_identifier rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TocFlow ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/has_gender_responsive_transformative_aspect
+:has_gender_responsive_transformative_aspect rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain :TocElement ;
+                                             rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/impact_area_narrative
+:impact_area_narrative rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :ImpactAreaPathway ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/indicator_code
+:indicator_code rdf:type owl:DatatypeProperty ;
+                rdfs:domain :SdgIndicator ;
+                rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/indicator_description
+:indicator_description rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Indicator ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/leader_response
+:leader_response rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ReviewComment ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/participatory_development_enabled
+:participatory_development_enabled rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :TocFlow ;
+                                   rdfs:range xsd:boolean .
+
+
+###  http://www.icarda.org/schemas/toc/resolution_date
+:resolution_date rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ReviewComment ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://www.icarda.org/schemas/toc/reviewer_comment
+:reviewer_comment rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ReviewComment ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/submission_date
+:submission_date rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ReviewComment ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://www.icarda.org/schemas/toc/target
+:target rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Indicator ;
+        rdfs:range rdfs:Literal .
+
+
+###  http://www.icarda.org/schemas/toc/target_year
+:target_year rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Indicator ;
+             rdfs:range xsd:int .
+
+
+###  http://www.icarda.org/schemas/toc/un49code
+:un49code rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Region ;
+          rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/uncode
+:uncode rdf:type owl:DatatypeProperty ;
+        rdfs:domain :SdgIndicator ;
+        rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/user_identifier
+:user_identifier rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ToCUser ;
+                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/Action
+:Action rdf:type owl:Class ;
+        rdfs:label "Action"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ActionArea
+:ActionArea rdf:type owl:Class ;
+            rdfs:label "Action Area"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:label "Actor"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ActorType
+:ActorType rdf:type owl:Class ;
+           rdfs:label "Actor Type"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Assumption
+:Assumption rdf:type owl:Class ;
+            rdfs:label "Assumption"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/CausalLink
+:CausalLink rdf:type owl:Class ;
+            rdfs:label "Causal Link"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/CgiarInitiative
+:CgiarInitiative rdf:type owl:Class ;
+                 rdfs:subClassOf :Programme ;
+                 rdfs:label "CGIAR Initiative"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/CgiarProject
+:CgiarProject rdf:type owl:Class ;
+              rdfs:subClassOf :Programme ;
+              rdfs:label "CGIAR Project"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/CgiarTarget
+:CgiarTarget rdf:type owl:Class ;
+             rdfs:subClassOf :Target ;
+             rdfs:label "CGIAR Target"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Comment
+:Comment rdf:type owl:Class ;
+         rdfs:label "Comment"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ContextualAssumption
+:ContextualAssumption rdf:type owl:Class ;
+                      rdfs:subClassOf :Assumption ;
+                      rdfs:label "Contextual Assumption"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :GeoScope ;
+         rdfs:label "Country"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/CountryRegionTOC
+:CountryRegionTOC rdf:type owl:Class ;
+                  rdfs:subClassOf :SubLevel ;
+                  rdfs:label "Country / Region TOC"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/GeoScope
+:GeoScope rdf:type owl:Class ;
+          rdfs:label "Geographical Scope"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/HighLevelImpact
+:HighLevelImpact rdf:type owl:Class ;
+                 rdfs:label "High Level Impact"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/HighLevelImpactAreasPathway
+:HighLevelImpactAreasPathway rdf:type owl:Class ;
+                             rdfs:label "High-level Impact Areas Pathway"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/HighLevelImpactSet
+:HighLevelImpactSet rdf:type owl:Class ;
+                    rdfs:label "High Level Impact Set"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/HighLevelOutcomesPathway
+:HighLevelOutcomesPathway rdf:type owl:Class ;
+                          rdfs:label "High-level Outcomes Pathway"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Impact
+:Impact rdf:type owl:Class ;
+        rdfs:subClassOf :Result ;
+        rdfs:label "Impact"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactArea
+:ImpactArea rdf:type owl:Class ;
+            rdfs:label "Impact Area"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactAreaPathway
+:ImpactAreaPathway rdf:type owl:Class ;
+                   rdfs:label "Impact Area Pathway"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactAreaTocEntity
+:ImpactAreaTocEntity rdf:type owl:Class ;
+                     rdfs:subClassOf :TocElement .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactIndicator
+:ImpactIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :Indicator ;
+                 rdfs:label "Impact Indicator"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactPathway
+:ImpactPathway rdf:type owl:Class ;
+               rdfs:label "Impact Pathway"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactTocEntity
+:ImpactTocEntity rdf:type owl:Class ;
+                 rdfs:subClassOf :ResultTocEntity .
+
+
+###  http://www.icarda.org/schemas/toc/Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:label "Indicator"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/InitiativeLevel
+:InitiativeLevel rdf:type owl:Class ;
+                 rdfs:subClassOf :TOC ;
+                 rdfs:label "Inititiave Level TOC"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Innovation
+:Innovation rdf:type owl:Class ;
+            rdfs:subClassOf :Result .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationPackage
+:InnovationPackage rdf:type owl:Class ;
+                   rdfs:subClassOf :Result .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationPackageTOC
+:InnovationPackageTOC rdf:type owl:Class ;
+                      rdfs:subClassOf :SubLevel ;
+                      rdfs:label "Innovation Package TOC"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationPackageTocEntity
+:InnovationPackageTocEntity rdf:type owl:Class ;
+                            rdfs:subClassOf :ResultTocEntity .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationTocEntity
+:InnovationTocEntity rdf:type owl:Class ;
+                     rdfs:subClassOf :ResultTocEntity .
+
+
+###  http://www.icarda.org/schemas/toc/Narrative
+:Narrative rdf:type owl:Class ;
+           rdfs:label "Narrative"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf :Actor ;
+              rdfs:label "Organization"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Outcome
+:Outcome rdf:type owl:Class ;
+         rdfs:subClassOf :Result ;
+         rdfs:label "Outcome"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/OutcomeTocEntity
+:OutcomeTocEntity rdf:type owl:Class ;
+                  rdfs:subClassOf :ResultTocEntity .
+
+
+###  http://www.icarda.org/schemas/toc/Output
+:Output rdf:type owl:Class ;
+        rdfs:subClassOf :Result ;
+        rdfs:label "Output"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/OutputTocEntity
+:OutputTocEntity rdf:type owl:Class ;
+                 rdfs:subClassOf :ResultTocEntity .
+
+
+###  http://www.icarda.org/schemas/toc/Programme
+:Programme rdf:type owl:Class ;
+           rdfs:label "Programme"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Project
+:Project rdf:type owl:Class ;
+         rdfs:subClassOf :Programme ;
+         rdfs:label "Project"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :GeoScope ;
+        rdfs:label "Region"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Result
+:Result rdf:type owl:Class ;
+        rdfs:label "Result"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ResultTocEntity
+:ResultTocEntity rdf:type owl:Class ;
+                 rdfs:subClassOf :TocElement .
+
+
+###  http://www.icarda.org/schemas/toc/ReviewComment
+:ReviewComment rdf:type owl:Class ;
+               rdfs:label "Review Comment"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/SDG
+:SDG rdf:type owl:Class ;
+     rdfs:label "UN Sustainable Development Goal"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/SdgIndicator
+:SdgIndicator rdf:type owl:Class ;
+              rdfs:subClassOf :TargetIndicator ;
+              rdfs:label "SDG Indicator"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/SdgTarget
+:SdgTarget rdf:type owl:Class ;
+           rdfs:subClassOf :Target ;
+           rdfs:label "UN SDG Target"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/SdgTocEntity
+:SdgTocEntity rdf:type owl:Class ;
+              rdfs:subClassOf :TocElement .
+
+
+###  http://www.icarda.org/schemas/toc/SubLevel
+:SubLevel rdf:type owl:Class ;
+          rdfs:subClassOf :TOC ;
+          rdfs:label "Sub-level TOC"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TOC
+:TOC rdf:type owl:Class ;
+     rdfs:label "Theory Of Change"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/Target
+:Target rdf:type owl:Class ;
+        rdfs:label "Target"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TargetIndicator
+:TargetIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :Indicator ;
+                 rdfs:label "Target Indicator"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TeamMembership
+:TeamMembership rdf:type owl:Class ;
+                rdfs:label "Team Membership"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TheoreticalAssumption
+:TheoreticalAssumption rdf:type owl:Class ;
+                       rdfs:subClassOf :Assumption ;
+                       rdfs:label "Theoretical Assumption"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/ToCUser
+:ToCUser rdf:type owl:Class ;
+         rdfs:label "TOC User"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TocElement
+:TocElement rdf:type owl:Class ;
+            rdfs:label "TOC Element"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TocFlow
+:TocFlow rdf:type owl:Class ;
+         rdfs:label "TOC Flow"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TocLevel
+:TocLevel rdf:type owl:Class ;
+          rdfs:label "TOC Level"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/TocReview
+:TocReview rdf:type owl:Class ;
+           rdfs:label "TOC Review"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/UnitOfMeasurement
+:UnitOfMeasurement rdf:type owl:Class ;
+                   rdfs:label "Unit Of Measurement"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/UserRole
+:UserRole rdf:type owl:Class ;
+          rdfs:label "User Role"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/WorkPackage
+:WorkPackage rdf:type owl:Class ;
+             rdfs:label "Work Package"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/WorkPackageLevel
+:WorkPackageLevel rdf:type owl:Class ;
+                  rdfs:subClassOf :TOC ;
+                  rdfs:label "Work Package Level TOC"^^xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/WorkPackageToc
+:WorkPackageToc rdf:type owl:Class ;
+                rdfs:subClassOf :TOC .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/CoLeader
+:CoLeader rdf:type owl:NamedIndividual ,
+                   :UserRole .
+
+
+###  http://www.icarda.org/schemas/toc/Leader
+:Leader rdf:type owl:NamedIndividual ,
+                 :UserRole .
+
+
+###  http://www.icarda.org/schemas/toc/Member
+:Member rdf:type owl:NamedIndividual ,
+                 :UserRole .
+
+
+###  http://www.icarda.org/schemas/toc/Reviewer
+:Reviewer rdf:type owl:NamedIndividual ,
+                   :UserRole .
+
+
+###  http://www.icarda.org/schemas/toc/Stakeholder
+:Stakeholder rdf:type owl:NamedIndividual ,
+                      :UserRole .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
