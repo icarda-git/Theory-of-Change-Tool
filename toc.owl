@@ -6,7 +6,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.icarda.org/schemas/toc/> .
 
-<http://www.icarda.org/schemas/toc/> rdf:type owl:Ontology .
+<http://www.icarda.org/schemas/toc/> rdf:type owl:Ontology ;
+                                      owl:imports <http://purl.org/dc/terms/> .
 
 #################################################################
 #    Object Properties
@@ -142,7 +143,8 @@
 
 ###  http://www.icarda.org/schemas/toc/impact_area_narrative
 :impact_area_narrative rdf:type owl:ObjectProperty ;
-                       rdfs:domain :ImpactAreaTocEntity ;
+                       rdfs:domain :ImpactAreaPathway ,
+                                   :ImpactAreaTocEntity ;
                        rdfs:range :Narrative .
 
 
@@ -237,10 +239,22 @@
                  rdfs:range :WorkPackageToc .
 
 
+###  http://www.icarda.org/schemas/toc/involves_impact_area
+:involves_impact_area rdf:type owl:ObjectProperty ;
+                      rdfs:domain :TOC ;
+                      rdfs:range :ImpactAreaTocEntity .
+
+
 ###  http://www.icarda.org/schemas/toc/involves_result
 :involves_result rdf:type owl:ObjectProperty ;
                  rdfs:domain :TOC ;
-                 rdfs:range :Result .
+                 rdfs:range :ResultTocEntity .
+
+
+###  http://www.icarda.org/schemas/toc/involves_sdg
+:involves_sdg rdf:type owl:ObjectProperty ;
+              rdfs:domain :TOC ;
+              rdfs:range :SdgTocEntity .
 
 
 ###  http://www.icarda.org/schemas/toc/link_from
@@ -453,7 +467,6 @@
 
 ###  http://www.icarda.org/schemas/toc/impact_area_narrative
 :impact_area_narrative rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :ImpactAreaPathway ;
                        rdfs:range xsd:string .
 
 
@@ -545,6 +558,7 @@
 
 ###  http://www.icarda.org/schemas/toc/Actor
 :Actor rdf:type owl:Class ;
+       <http://purl.org/dc/terms/description> "An individual or organizations operating as part of the system the Initiative aims to influence and whose actions can advance or impede the Initiative’s aims."@en ;
        rdfs:label "Actor"^^xsd:string .
 
 
@@ -555,7 +569,8 @@
 
 ###  http://www.icarda.org/schemas/toc/Assumption
 :Assumption rdf:type owl:Class ;
-            rdfs:label "Assumption"^^xsd:string .
+            <http://purl.org/dc/terms/description> "A condition that is likely necessary for the causal chain behind an intervention to hold."@en ;
+            rdfs:label "Assumption"@en .
 
 
 ###  http://www.icarda.org/schemas/toc/CausalLink
@@ -604,6 +619,13 @@
                   rdfs:label "Country / Region TOC"^^xsd:string .
 
 
+###  http://www.icarda.org/schemas/toc/EoiOutcome
+:EoiOutcome rdf:type owl:Class ;
+            rdfs:subClassOf :Outcome ;
+            <http://purl.org/dc/terms/description> "An outcome that is challenging but reasonable to expect within the timeframe and resources of the Initiative (program) and observable at the conclusion of an Initiative (or program), and is therefore testable during post-project evaluation."@en ;
+            rdfs:label "End-of-Initiative Outcome"@en .
+
+
 ###  http://www.icarda.org/schemas/toc/GeoScope
 :GeoScope rdf:type owl:Class ;
           rdfs:label "Geographical Scope"^^xsd:string .
@@ -632,6 +654,7 @@
 ###  http://www.icarda.org/schemas/toc/Impact
 :Impact rdf:type owl:Class ;
         rdfs:subClassOf :Result ;
+        <http://purl.org/dc/terms/description> "A durable change in the condition of people and their environment brought about by a chain of events or change in how a system functions to which research, innovations and related activities have contributed. It refers to a change of state (e.g. nutritional status; farm productivity; household wealth; gender representation in land rights) or flow (e.g. average annual income; CO2 emissions)."@en ;
         rdfs:label "Impact"^^xsd:string .
 
 
@@ -717,6 +740,7 @@
 ###  http://www.icarda.org/schemas/toc/Outcome
 :Outcome rdf:type owl:Class ;
          rdfs:subClassOf :Result ;
+         <http://purl.org/dc/terms/description> "A change in knowledge, skills, attitudes and/or relationships, which manifests as a change in behavior, to which research outputs and related activities have contributed."@en ;
          rdfs:label "Outcome"^^xsd:string .
 
 
@@ -747,6 +771,12 @@
          rdfs:label "Project"^^xsd:string .
 
 
+###  http://www.icarda.org/schemas/toc/Proposal
+:Proposal rdf:type owl:Class ;
+          rdfs:subClassOf :Programme ;
+          rdfs:label "Proposal"^^xsd:string .
+
+
 ###  http://www.icarda.org/schemas/toc/Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf :GeoScope ;
@@ -755,6 +785,7 @@
 
 ###  http://www.icarda.org/schemas/toc/Result
 :Result rdf:type owl:Class ;
+        <http://purl.org/dc/terms/description> "A collective term referring to one or more outputs, outcomes or impacts of an intervention."@en ;
         rdfs:label "Result"^^xsd:string .
 
 
