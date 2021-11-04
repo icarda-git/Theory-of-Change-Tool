@@ -1,0 +1,949 @@
+@prefix : <http://www.icarda.org/schemas/toc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.icarda.org/schemas/toc/> .
+
+<http://www.icarda.org/schemas/toc/> rdf:type owl:Ontology ;
+                                      owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/action_scope
+:action_scope rdf:type owl:ObjectProperty ;
+              rdfs:domain :Action ;
+              rdfs:range :GeoScope ;
+              rdfs:label "action scope"@en .
+
+
+###  http://www.icarda.org/schemas/toc/applicable_impact_area_indicator
+:applicable_impact_area_indicator rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ImpactAreaTocEntity ;
+                                  rdfs:range :Indicator ;
+                                  rdfs:label "applicable impact area indicator"@en .
+
+
+###  http://www.icarda.org/schemas/toc/applicable_result_indicator
+:applicable_result_indicator rdf:type owl:ObjectProperty ;
+                             owl:inverseOf :assesses_result ;
+                             rdfs:domain :ResultTocEntity ;
+                             rdfs:range :Indicator ;
+                             rdfs:label "applicable result indicator"@en .
+
+
+###  http://www.icarda.org/schemas/toc/applicable_sdg_indicator
+:applicable_sdg_indicator rdf:type owl:ObjectProperty ;
+                          rdfs:domain :SdgTocEntity ;
+                          rdfs:range :SdgIndicator ;
+                          rdfs:label "applicable SDG indicator"@en .
+
+
+###  http://www.icarda.org/schemas/toc/applicable_sdg_target
+:applicable_sdg_target rdf:type owl:ObjectProperty ;
+                       rdfs:domain :SdgTocEntity ;
+                       rdfs:range :SdgTarget ;
+                       rdfs:label "applicable SDG target"@en .
+
+
+###  http://www.icarda.org/schemas/toc/assesses_result
+:assesses_result rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Indicator ;
+                 rdfs:range :ResultTocEntity ;
+                 rdfs:label "assesses result"@en .
+
+
+###  http://www.icarda.org/schemas/toc/assumes
+:assumes rdf:type owl:ObjectProperty ;
+         rdfs:domain :Action ;
+         rdfs:range :Assumption ;
+         rdfs:label "assumes"@en .
+
+
+###  http://www.icarda.org/schemas/toc/comment_on
+:comment_on rdf:type owl:ObjectProperty ;
+            owl:inverseOf :has_comment ;
+            rdfs:domain :Comment ;
+            rdfs:range owl:Thing ;
+            rdfs:label "comments on"@en .
+
+
+###  http://www.icarda.org/schemas/toc/commenter
+:commenter rdf:type owl:ObjectProperty ;
+           rdfs:domain :Comment ;
+           rdfs:range :ToCUser ;
+           <http://purl.org/dc/terms/description> "The author of a comment."@en ;
+           rdfs:label "commenter"@en .
+
+
+###  http://www.icarda.org/schemas/toc/covers_wp
+:covers_wp rdf:type owl:ObjectProperty ;
+           rdfs:domain :WorkPackageLevelToc ;
+           rdfs:range :WorkPackage ;
+           rdfs:label "covers work package"@en .
+
+
+###  http://www.icarda.org/schemas/toc/expected_action
+:expected_action rdf:type owl:ObjectProperty ;
+                 rdfs:domain :CausalLink ;
+                 rdfs:range :Action ;
+                 rdfs:label "expected action"@en .
+
+
+###  http://www.icarda.org/schemas/toc/for_sdg
+:for_sdg rdf:type owl:ObjectProperty ;
+         rdfs:domain :SdgTarget ;
+         rdfs:range :SDG ;
+         rdfs:label "for SDG"@en .
+
+
+###  http://www.icarda.org/schemas/toc/for_target
+:for_target rdf:type owl:ObjectProperty ;
+            rdfs:domain :Indicator ;
+            rdfs:range :Target ;
+            rdfs:label "for target"@en .
+
+
+###  http://www.icarda.org/schemas/toc/for_toc
+:for_toc rdf:type owl:ObjectProperty ;
+         rdfs:domain :ToCReview ;
+         rdfs:range :TOC ;
+         rdfs:label "for ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/has_comment
+:has_comment rdf:type owl:ObjectProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range :Comment ;
+             rdfs:label "has comment"@en .
+
+
+###  http://www.icarda.org/schemas/toc/has_core_innovation
+:has_core_innovation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :InnovationPackage ;
+                     rdfs:range :Innovation ;
+                     rdfs:label "has core innovation"@en .
+
+
+###  http://www.icarda.org/schemas/toc/has_membership
+:has_membership rdf:type owl:ObjectProperty ;
+                rdfs:domain :TocFlow ;
+                rdfs:range :TeamMembership ;
+                rdfs:label "has membership"@en .
+
+
+###  http://www.icarda.org/schemas/toc/has_user
+:has_user rdf:type owl:ObjectProperty ;
+          rdfs:domain :TeamMembership ;
+          rdfs:range :ToCUser ;
+          rdfs:label "has user"@en .
+
+
+###  http://www.icarda.org/schemas/toc/has_wp
+:has_wp rdf:type owl:ObjectProperty ;
+        owl:inverseOf :part_of_programme ;
+        rdfs:domain :Programme ;
+        rdfs:range :WorkPackage ;
+        rdfs:label "has work package"@en .
+
+
+###  http://www.icarda.org/schemas/toc/in_region
+:in_region rdf:type owl:ObjectProperty ;
+           rdfs:domain :Country ;
+           rdfs:range :Region ;
+           rdfs:label "in region"@en .
+
+
+###  http://www.icarda.org/schemas/toc/in_toc
+:in_toc rdf:type owl:ObjectProperty ;
+        rdfs:domain :TocElement ;
+        rdfs:range :TOC ;
+        rdfs:label "in Theory of Change"@en ;
+        skos:altLabel "in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/included_in
+:included_in rdf:type owl:ObjectProperty ;
+             rdfs:domain :ImpactPathway ;
+             rdfs:range :TOC ;
+             rdfs:label "included in"@en .
+
+
+###  http://www.icarda.org/schemas/toc/includes_element
+:includes_element rdf:type owl:ObjectProperty ;
+                  rdfs:domain :ImpactPathway ;
+                  rdfs:range :TocElement ;
+                  rdfs:label "includes element"@en .
+
+
+###  http://www.icarda.org/schemas/toc/includes_innovation
+:includes_innovation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :InnovationPackage ;
+                     rdfs:range :Innovation ;
+                     rdfs:label "includes innovation"@en .
+
+
+###  http://www.icarda.org/schemas/toc/includes_toc
+:includes_toc rdf:type owl:ObjectProperty ;
+              owl:inverseOf :under_flow ;
+              rdfs:domain :TocFlow ;
+              rdfs:range :TOC ;
+              rdfs:label "includes Theory of Change"@en ;
+              skos:altLabel "includes ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/includes_toc_review
+:includes_toc_review rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Review ;
+                     rdfs:range :ToCReview ;
+                     rdfs:label "includes ToC review"@en .
+
+
+###  http://www.icarda.org/schemas/toc/indicator_scope
+:indicator_scope rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Indicator ;
+                 rdfs:range :GeoScope .
+
+
+###  http://www.icarda.org/schemas/toc/involves_element
+:involves_element rdf:type owl:ObjectProperty ;
+                  rdfs:domain :TOC ;
+                  rdfs:range :TocElement ;
+                  rdfs:label "involves ToC element"@en .
+
+
+###  http://www.icarda.org/schemas/toc/mentions
+:mentions rdf:type owl:ObjectProperty ;
+          rdfs:domain :Comment ;
+          rdfs:range :ToCUser ;
+          <http://purl.org/dc/terms/description> "indicates users referred to within the body of a comment."@en ;
+          rdfs:label "mentions"@en .
+
+
+###  http://www.icarda.org/schemas/toc/parent_region
+:parent_region rdf:type owl:ObjectProperty ;
+               rdfs:domain :Region ;
+               rdfs:range :Region ;
+               rdfs:label "parent region"@en .
+
+
+###  http://www.icarda.org/schemas/toc/part_of_flow
+:part_of_flow rdf:type owl:ObjectProperty ;
+              rdfs:domain :Review ;
+              rdfs:range :TocFlow ;
+              rdfs:label "part of flow"@en .
+
+
+###  http://www.icarda.org/schemas/toc/part_of_programme
+:part_of_programme rdf:type owl:ObjectProperty ;
+                   rdfs:domain :WorkPackage ;
+                   rdfs:range :Programme ;
+                   rdfs:label "part of programme"@en .
+
+
+###  http://www.icarda.org/schemas/toc/produced_by
+:produced_by rdf:type owl:ObjectProperty ;
+             rdfs:domain :Result ;
+             rdfs:range :Programme ;
+             rdfs:label "produced by"@en .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to
+:refers_to rdf:type owl:ObjectProperty ;
+           rdfs:domain :TocFlow ;
+           rdfs:range :Programme ;
+           rdfs:label "refers to programme"@en .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to_impact_area
+:refers_to_impact_area rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ImpactAreaTocEntity ;
+                       rdfs:range :ImpactArea ;
+                       rdfs:label "refers to impact area"@en .
+
+
+###  http://www.icarda.org/schemas/toc/refers_to_sdg
+:refers_to_sdg rdf:type owl:ObjectProperty ;
+               rdfs:domain :SdgTocEntity ;
+               rdfs:range :SDG ;
+               rdfs:label "refers to SDG"@en .
+
+
+###  http://www.icarda.org/schemas/toc/responsible_actor
+:responsible_actor rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Action ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :Actor
+                                              :ActorClassification
+                                            )
+                              ] ;
+                   rdfs:label "responsible actor"@en .
+
+
+###  http://www.icarda.org/schemas/toc/review_comment
+:review_comment rdf:type owl:ObjectProperty ;
+                rdfs:domain :ToCReview ;
+                rdfs:range :Comment ;
+                rdfs:label "review comment"@en .
+
+
+###  http://www.icarda.org/schemas/toc/reviewer
+:reviewer rdf:type owl:ObjectProperty ;
+          rdfs:domain :Review ;
+          rdfs:range :ToCUser ;
+          rdfs:label "reviewer"@en .
+
+
+###  http://www.icarda.org/schemas/toc/role_in_flow
+:role_in_flow rdf:type owl:ObjectProperty ;
+              rdfs:domain :TeamMembership ;
+              rdfs:range :UserRole ;
+              rdfs:label "user role in ToC flow"@en .
+
+
+###  http://www.icarda.org/schemas/toc/toc_level
+:toc_level rdf:type owl:ObjectProperty ;
+           rdfs:domain :TOC ;
+           rdfs:range :ToCLevel ;
+           rdfs:label "ToC level"@en .
+
+
+###  http://www.icarda.org/schemas/toc/transition_endpoint
+:transition_endpoint rdf:type owl:ObjectProperty ;
+                     rdfs:domain :CausalLink ;
+                     rdfs:range :TocElement ;
+                     rdfs:label "transition endpoint"@en .
+
+
+###  http://www.icarda.org/schemas/toc/transition_scope
+:transition_scope rdf:type owl:ObjectProperty ;
+                  rdfs:domain :CausalLink ;
+                  rdfs:range :GeoScope ;
+                  rdfs:label "transition scope"@en .
+
+
+###  http://www.icarda.org/schemas/toc/transition_startpoint
+:transition_startpoint rdf:type owl:ObjectProperty ;
+                       rdfs:domain :CausalLink ;
+                       rdfs:range :TocElement ;
+                       rdfs:label "transition startpoint"@en .
+
+
+###  http://www.icarda.org/schemas/toc/under_action_area
+:under_action_area rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Programme ;
+                   rdfs:range :ActionArea ;
+                   rdfs:label "under Action Area"@en .
+
+
+###  http://www.icarda.org/schemas/toc/under_flow
+:under_flow rdf:type owl:ObjectProperty ;
+            rdfs:domain :TOC ;
+            rdfs:range :TocFlow ;
+            rdfs:label "under ToC flow"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/action_description
+:action_description rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Action ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "action description"@en .
+
+
+###  http://www.icarda.org/schemas/toc/alpha2_code
+:alpha2_code rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:label "ISO 3166-1 alpha-2 code"@en .
+
+
+###  http://www.icarda.org/schemas/toc/baseline_value
+:baseline_value rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Indicator ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "baseline value"@en .
+
+
+###  http://www.icarda.org/schemas/toc/baseline_year
+:baseline_year rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Indicator ;
+               rdfs:range xsd:long ;
+               rdfs:label "baseline year"@en .
+
+
+###  http://www.icarda.org/schemas/toc/challenge
+:challenge rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TOC ;
+           rdfs:range xsd:string ;
+           <http://purl.org/dc/terms/description> "A short description of the challenge addressed by the programme. It is associated with the Initiative (n-1) level ToC within the programme's ToC Flow."@en ;
+           rdfs:label "challenge"@en .
+
+
+###  http://www.icarda.org/schemas/toc/clarisa_id
+:clarisa_id rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The id of a given entity as provided by the CLARISA API"@en ;
+            rdfs:label "CLARISA ID"@en ;
+            rdfs:seeAlso "https://clarisa.cgiar.org/swagger/home.html"@en .
+
+
+###  http://www.icarda.org/schemas/toc/comment_body
+:comment_body rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Comment ;
+              rdfs:range xsd:string ;
+              rdfs:label "comment body"@en .
+
+
+###  http://www.icarda.org/schemas/toc/contribution_to_sdg
+:contribution_to_sdg rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :element_narrative ;
+                     rdfs:domain :SdgTocEntity ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "contribution to SDG"@en .
+
+
+###  http://www.icarda.org/schemas/toc/data_collection_frequency
+:data_collection_frequency rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Indicator ;
+                           rdfs:range xsd:string .
+
+
+###  http://www.icarda.org/schemas/toc/data_collection_method
+:data_collection_method rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Indicator ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "data collection method"@en .
+
+
+###  http://www.icarda.org/schemas/toc/element_narrative
+:element_narrative rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TocElement ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "element narrative"@en .
+
+
+###  http://www.icarda.org/schemas/toc/flow_id
+:flow_id rdf:type owl:DatatypeProperty ;
+         rdfs:label "ToC flow identifier"@en .
+
+
+###  http://www.icarda.org/schemas/toc/has_gender_responsive_transformative_aspect
+:has_gender_responsive_transformative_aspect rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain :TocElement ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:label "gender responsive or transformative aspect"@en .
+
+
+###  http://www.icarda.org/schemas/toc/indicator_code
+:indicator_code rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Indicator ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "indicator code"@en .
+
+
+###  http://www.icarda.org/schemas/toc/indicator_description
+:indicator_description rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Indicator ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "indicator description"@en .
+
+
+###  http://www.icarda.org/schemas/toc/is_cgiar_programme
+:is_cgiar_programme rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Programme ;
+                    rdfs:range xsd:boolean ;
+                    <http://purl.org/dc/terms/description> "Indicates if the given programme is a CGIAR activity."@en ;
+                    rdfs:label "is CGIAR programme"@en .
+
+
+###  http://www.icarda.org/schemas/toc/pdb_is_enabled
+:pdb_is_enabled rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TocFlow ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "participatory development board is enabled"@en .
+
+
+###  http://www.icarda.org/schemas/toc/pdb_link
+:pdb_link rdf:type owl:DatatypeProperty ;
+          rdfs:domain :ParticipatoryDevelopmentBoard ;
+          rdfs:range xsd:anyURI ;
+          rdfs:label "Participatory Development Board Site"@en .
+
+
+###  http://www.icarda.org/schemas/toc/rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ToCReview ;
+        rdfs:range xsd:long ;
+        rdfs:label "rating"@en .
+
+
+###  http://www.icarda.org/schemas/toc/sdg_indicator_code
+:sdg_indicator_code rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :indicator_code ;
+                    rdfs:domain :SdgIndicator ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "SDG indicator code"@en .
+
+
+###  http://www.icarda.org/schemas/toc/target_value
+:target_value rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Indicator ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "target value"@en .
+
+
+###  http://www.icarda.org/schemas/toc/target_year
+:target_year rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Indicator ;
+             rdfs:range xsd:long ;
+             rdfs:label "target year"@en .
+
+
+###  http://www.icarda.org/schemas/toc/toc_narrative
+:toc_narrative rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TOC ;
+               rdfs:range xsd:string ;
+               rdfs:label "toc narrative"@en .
+
+
+###  http://www.icarda.org/schemas/toc/un_m49_code
+:un_m49_code rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Region ;
+             rdfs:range xsd:string ;
+             rdfs:label "UN M49 code"@en .
+
+
+###  http://www.icarda.org/schemas/toc/unit
+:unit rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Indicator ;
+      rdfs:range rdfs:Literal ;
+      rdfs:label "indicator unit"@en .
+
+
+###  http://www.icarda.org/schemas/toc/used_data_source
+:used_data_source rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Indicator ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "data source"@en .
+
+
+###  http://www.icarda.org/schemas/toc/user_identifier
+:user_identifier rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ToCUser ;
+                 rdfs:range xsd:string ;
+                 <http://purl.org/dc/terms/description> "a non-traceable identifier for a ToC tool user. Its purpose is to connect information kept in the knowledge base with other databases used by the tool."@en ;
+                 rdfs:label "user identifier"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.icarda.org/schemas/toc/AaTocEntity
+:AaTocEntity rdf:type owl:Class ;
+             rdfs:subClassOf :OutcomeTocEntity ;
+             rdfs:label "Action Area Outcome in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Action
+:Action rdf:type owl:Class ;
+        rdfs:label "Action"@en ;
+        skos:altLabel "Intervention"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ActionArea
+:ActionArea rdf:type owl:Class ;
+            rdfs:label "Action Area"@en ;
+            rdfs:seeAlso "https://www.cgiar.org/research/action-areas/"@en ;
+            skos:prefLabel "CGIAR Action Area"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ActionAreaLevelToc
+:ActionAreaLevelToc rdf:type owl:Class ;
+                    rdfs:subClassOf :TOC ;
+                    rdfs:label "Action Area-level ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ActionAreaOutcome
+:ActionAreaOutcome rdf:type owl:Class ;
+                   rdfs:subClassOf :Outcome ;
+                   rdfs:label "Action Area Outcome"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:label "Actor"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ActorClassification
+:ActorClassification rdf:type owl:Class ;
+                     rdfs:label "Actor Classification"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Assumption
+:Assumption rdf:type owl:Class ;
+            rdfs:label "Assumption"@en ;
+            skos:definition "A condition that is likely necessary for the causal chain behind an intervention to hold."@en .
+
+
+###  http://www.icarda.org/schemas/toc/CausalLink
+:CausalLink rdf:type owl:Class ;
+            rdfs:subClassOf :TocElement ;
+            rdfs:label "Causal Link"@en .
+
+
+###  http://www.icarda.org/schemas/toc/CgiarTarget
+:CgiarTarget rdf:type owl:Class ;
+             rdfs:subClassOf :Target ;
+             rdfs:label "CGIAR Target"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Comment
+:Comment rdf:type owl:Class ;
+         rdfs:label "Comment"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ContributionSummary
+:ContributionSummary rdf:type owl:Class ;
+                     rdfs:subClassOf :Narrative ;
+                     rdfs:label "Contribution Summary"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :GeoScope ;
+         rdfs:label "Country"@en .
+
+
+###  http://www.icarda.org/schemas/toc/CountryLevelToc
+:CountryLevelToc rdf:type owl:Class ;
+                 rdfs:subClassOf :SubLevelToc ;
+                 rdfs:label "Country-level ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/EOI
+:EOI rdf:type owl:Class ;
+     rdfs:subClassOf :Outcome ;
+     rdfs:label "End-of-Initiative Outcome"@en ;
+     skos:altLabel "EoI Outcome"@en ;
+     skos:definition "An outcome that is challenging but reasonable to expect within the timeframe and resources of the Initiative (program) and observable at the conclusion of an Initiative (or program), and is therefore testable during post-project evaluation."@en .
+
+
+###  http://www.icarda.org/schemas/toc/EoiOutcomeTocEntity
+:EoiOutcomeTocEntity rdf:type owl:Class ;
+                     rdfs:subClassOf :OutcomeTocEntity ;
+                     rdfs:label "End-of-Initiative Outcome in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/GeoScope
+:GeoScope rdf:type owl:Class ;
+          rdfs:label "Geographical Scope"@en ;
+          skos:altLabel "GeoScope"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Impact
+:Impact rdf:type owl:Class ;
+        rdfs:subClassOf :Result ;
+        rdfs:label "Impact"@en ;
+        skos:definition "A durable change in the condition of people and their environment brought about by a chain of events or change in how a system functions to which research, innovations and related activities have contributed. It refers to a change of state (e.g. nutritional status; farm productivity; household wealth; gender representation in land rights) or flow (e.g. average annual income; CO2 emissions)."@en .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactArea
+:ImpactArea rdf:type owl:Class ;
+            rdfs:label "Impact Area"@en ;
+            skos:prefLabel "CGIAR Impact Area"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactAreaTocEntity
+:ImpactAreaTocEntity rdf:type owl:Class ;
+                     rdfs:subClassOf :TocElement ;
+                     rdfs:label "Impact Area in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactIndicator
+:ImpactIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :ResultIndicator .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactPathway
+:ImpactPathway rdf:type owl:Class ;
+               rdfs:label "Impact Pathway"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ImpactTocEntity
+:ImpactTocEntity rdf:type owl:Class ;
+                 rdfs:subClassOf :ResultTocEntity ;
+                 rdfs:label "Impact in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:label "Indicator"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Initiative
+:Initiative rdf:type owl:Class ;
+            rdfs:subClassOf :Programme ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :is_cgiar_programme ;
+                              owl:hasValue "true"^^xsd:boolean
+                            ] ;
+            owl:disjointWith :Project ,
+                             :Proposal ;
+            rdfs:label "Initiative"@en ;
+            skos:altLabel "CGIAR Initiative"@en .
+
+
+###  http://www.icarda.org/schemas/toc/InitiativeLevelToc
+:InitiativeLevelToc rdf:type owl:Class ;
+                    rdfs:subClassOf :TOC ;
+                    rdfs:label "Initiative-level Theory of Change"@en ;
+                    skos:altLabel "Initiative-level ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Innovation
+:Innovation rdf:type owl:Class ;
+            rdfs:subClassOf :Result ;
+            rdfs:label "Innovation" .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationPackage
+:InnovationPackage rdf:type owl:Class ;
+                   rdfs:subClassOf :Result ;
+                   rdfs:label "Innovation Package" .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationPackageLevelToC
+:InnovationPackageLevelToC rdf:type owl:Class ;
+                           rdfs:subClassOf :SubLevelToc ;
+                           rdfs:label "Innovation Package-level ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationPackageTocEntity
+:InnovationPackageTocEntity rdf:type owl:Class ;
+                            rdfs:subClassOf :ResultTocEntity ;
+                            rdfs:label "Innovation Package in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/InnovationTocEntity
+:InnovationTocEntity rdf:type owl:Class ;
+                     rdfs:subClassOf :ResultTocEntity ;
+                     rdfs:label "Innovation in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Narrative
+:Narrative rdf:type owl:Class ;
+           rdfs:label "Narrative"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Outcome
+:Outcome rdf:type owl:Class ;
+         rdfs:subClassOf :Result ;
+         rdfs:label "Outcome"@en ;
+         skos:definition "A change in knowledge, skills, attitudes and/or relationships, which manifests as a change in behavior, to which research outputs and related activities have contributed."@en .
+
+
+###  http://www.icarda.org/schemas/toc/OutcomeIndicator
+:OutcomeIndicator rdf:type owl:Class ;
+                  rdfs:subClassOf :ResultIndicator .
+
+
+###  http://www.icarda.org/schemas/toc/OutcomeTocEntity
+:OutcomeTocEntity rdf:type owl:Class ;
+                  rdfs:subClassOf :ResultTocEntity ;
+                  rdfs:label "Outcome in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Output
+:Output rdf:type owl:Class ;
+        rdfs:subClassOf :Result ;
+        rdfs:label "Output"@en ;
+        skos:definition "Knowledge, technical or institutional advancement produced by research, engagement and/or capacity development activities. Examples of outputs include new research methods, policy analyses, gene maps, new crop varieties and breeds, or other products of research work."@en .
+
+
+###  http://www.icarda.org/schemas/toc/OutputIndicator
+:OutputIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :ResultIndicator .
+
+
+###  http://www.icarda.org/schemas/toc/OutputTocEntity
+:OutputTocEntity rdf:type owl:Class ;
+                 rdfs:subClassOf :ResultTocEntity ;
+                 rdfs:label "Output in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ParticipatoryDevelopmentBoard
+:ParticipatoryDevelopmentBoard rdf:type owl:Class ;
+                               rdfs:label "Participatory Development Board"@en ;
+                               skos:altLabel "PDB"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Programme
+:Programme rdf:type owl:Class ;
+           rdfs:label "Programme"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Project
+:Project rdf:type owl:Class ;
+         rdfs:subClassOf :Programme ;
+         owl:disjointWith :Proposal ;
+         rdfs:label "Project"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Proposal
+:Proposal rdf:type owl:Class ;
+          rdfs:subClassOf :Programme ;
+          rdfs:label "Proposal"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :GeoScope ;
+        rdfs:label "Region"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Result
+:Result rdf:type owl:Class ;
+        rdfs:label "Result"@en ;
+        skos:definition "A collective term referring to one or more outputs, outcomes or impacts of an intervention."@en .
+
+
+###  http://www.icarda.org/schemas/toc/ResultIndicator
+:ResultIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :Indicator .
+
+
+###  http://www.icarda.org/schemas/toc/ResultTocEntity
+:ResultTocEntity rdf:type owl:Class ;
+                 rdfs:subClassOf :TocElement ;
+                 rdfs:label "Result in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Review
+:Review rdf:type owl:Class ;
+        rdfs:label "Theory of Change Flow Review"@en ;
+        skos:altLabel "ToC Flow Review"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ReviewerComment
+:ReviewerComment rdf:type owl:Class ;
+                 rdfs:subClassOf :Comment ;
+                 rdfs:label "Reviewer Comment"@en .
+
+
+###  http://www.icarda.org/schemas/toc/SDG
+:SDG rdf:type owl:Class ;
+     rdfs:label "Sustainable Development Goal"@en ;
+     skos:altLabel "SDG"@en .
+
+
+###  http://www.icarda.org/schemas/toc/SdgIndicator
+:SdgIndicator rdf:type owl:Class ;
+              rdfs:subClassOf :TargetIndicator ;
+              rdfs:label "SDG Target Indicator"@en .
+
+
+###  http://www.icarda.org/schemas/toc/SdgTarget
+:SdgTarget rdf:type owl:Class ;
+           rdfs:subClassOf :Target ;
+           rdfs:label "SDG Target"@en .
+
+
+###  http://www.icarda.org/schemas/toc/SdgTocEntity
+:SdgTocEntity rdf:type owl:Class ;
+              rdfs:subClassOf :TocElement ;
+              rdfs:label "SDG in ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/StakeholderComment
+:StakeholderComment rdf:type owl:Class ;
+                    rdfs:subClassOf :Comment ;
+                    rdfs:label "Stakeholder Comment"@en .
+
+
+###  http://www.icarda.org/schemas/toc/SubLevelToc
+:SubLevelToc rdf:type owl:Class ;
+             rdfs:subClassOf :TOC ;
+             rdfs:label "Sub-level ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/TOC
+:TOC rdf:type owl:Class ;
+     rdfs:label "Theory of Change"@en ;
+     skos:altLabel "ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/Target
+:Target rdf:type owl:Class ;
+        rdfs:label "Target"@en .
+
+
+###  http://www.icarda.org/schemas/toc/TargetIndicator
+:TargetIndicator rdf:type owl:Class ;
+                 rdfs:subClassOf :Indicator .
+
+
+###  http://www.icarda.org/schemas/toc/TeamMembership
+:TeamMembership rdf:type owl:Class ;
+                rdfs:label "ToC Flow Team Membership"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ToCLevel
+:ToCLevel rdf:type owl:Class ;
+          rdfs:label "Theory of Change Level"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ToCReview
+:ToCReview rdf:type owl:Class ;
+           rdfs:label "Theory of Change Review"@en .
+
+
+###  http://www.icarda.org/schemas/toc/ToCUser
+:ToCUser rdf:type owl:Class ;
+         rdfs:label "ToC Flow User"@en .
+
+
+###  http://www.icarda.org/schemas/toc/TocElement
+:TocElement rdf:type owl:Class ;
+            rdfs:label "Theory of Change Element"@en ;
+            skos:altLabel "ToC Element"@en .
+
+
+###  http://www.icarda.org/schemas/toc/TocFlow
+:TocFlow rdf:type owl:Class ;
+         rdfs:label "Theory of Change Flow"@en ;
+         skos:altLabel "ToC Flow"@en .
+
+
+###  http://www.icarda.org/schemas/toc/UserRole
+:UserRole rdf:type owl:Class ;
+          rdfs:label "User Role"@en .
+
+
+###  http://www.icarda.org/schemas/toc/WorkPackage
+:WorkPackage rdf:type owl:Class ;
+             rdfs:label "Work Package"@en .
+
+
+###  http://www.icarda.org/schemas/toc/WorkPackageLevelToc
+:WorkPackageLevelToc rdf:type owl:Class ;
+                     rdfs:subClassOf :TOC ;
+                     rdfs:label "Work Package-level Theory of Change"@en ;
+                     skos:altLabel "WP-level ToC"@en .
+
+
+###  http://www.icarda.org/schemas/toc/WorkPackageTocEntity
+:WorkPackageTocEntity rdf:type owl:Class ;
+                      rdfs:subClassOf :TocElement ;
+                      rdfs:label "Work Package in ToC"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
