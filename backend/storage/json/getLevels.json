@@ -1,0 +1,12 @@
+{
+    "toc_levels": [
+        {
+            "id": 1,
+            "title": "Initiative Level (n-1)"
+        },
+        {
+            "id": 2,
+            "title": "Work Package (n-2)"
+        }
+    ]
+}

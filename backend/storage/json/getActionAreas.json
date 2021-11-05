@@ -1,0 +1,108 @@
+{
+  "action_areas": [
+    {
+      "code": "1",
+      "title": "Systems Transformation",
+        "image" : "https://toc.demo.scio.services/img/actions_areas/AA-01.png",
+      "description": "Food systems driving sustainable land and water use, living within planetary boundaries, livelihoods, gender equality, healthy diets, and management of climate risks.",
+      "outcomes": [
+        {
+          "code": "1.1",
+          "description": "Demand and scaling partners use knowledge gained from science-based assessments to implement agroecological options that are economically viable, environmentally sound and socially inclusive"
+        },
+        {
+          "code": "1.2",
+          "description": "Carbon sequestration in agrifood systems is increased and green energy is widely used"
+        },
+        {
+          "code": "1.3",
+          "description": "Water use is deliberate and efficient reflecting national priorities and regional equity"
+        },
+        {
+          "code": "1.4",
+          "description": "National and subnational stakeholders lead food, land, and water system transformation and have the means to advance livelihoods, nutrition, environment, and inclusion objectives"
+        },
+        {
+          "code": "1.5",
+          "description": "Smallholder farmers and value chain actors have increased means and skills for adapting to climate change"
+        },
+        {
+          "code": "1.6",
+          "description": "National policymakers, international organizations, and market actors rely on innovative tools for decision-making"
+        },
+        {
+          "code": "1.7",
+          "description": "National agencies, civil society networks, and private actors have incorporated gender and inclusive transformative strategies"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "title": "Resilient Agrifood Systems",
+        "image" : "https://toc.demo.scio.services/img/actions_areas/AA-02.png",
+      "description": "Farming and food supply for healthy and safe diets, decent livelihoods, gender equality and youth inclusion, climate solutions, and environmental stewardship.",
+      "outcomes": [
+        {
+          "code": "2.1",
+          "description": "Smallholder farmers and their organizations adopt resource-efficient and climate-smart technologies and practices and use digital services to enhance their capacity and skills"
+        },
+        {
+          "code": "2.2",
+          "description": "Smallholder farmers have increased capacity to cope with climate risks and extremes through diversification, access to climate information, insurance and credit products and services"
+        },
+        {
+          "code": "2.3",
+          "description": "SWomen, youth, and marginalized groups participate in and benefit from improved value chains, farming systems and AFS"
+        },
+        {
+          "code": "2.4",
+          "description": "Our research and scaling partners use available data, new tools, and turnkey solutions to co-create resilient and inclusive AFS"
+        },
+        {
+          "code": "2.5",
+          "description": "Public, private and finance sector invest in climate smart and more inclusive agri-business models and support services"
+        },
+        {
+          "code": "2.6",
+          "description": "National and local decision makers adopt decision support tools and design enabling policies and incentive systems based on scientific evidence"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "title": "Genetic Innovation",
+        "image" : "https://toc.demo.scio.services/img/actions_areas/AA-03.png",
+      "description": "Genebanks, crop breeding and seed systems to underpin rapid adaptation of food and farms to meet goals for poverty reduction, gender equality, nutrition, climate, and environment.",
+      "outcomes": [
+        {
+          "code": "3.1",
+          "description": "Researchers, breeders and other users access genebank collections where use is facilitated with more data associated with accessions"
+        },
+        {
+          "code": "3.2",
+          "description": "CGIAR & partners produce better, demand-driven, more impactful varieties defined by multidisciplinary, holistic market intelligence"
+        },
+        {
+          "code": "3.3",
+          "description": "CGIAR & partner breeding programs increase their efficiency and speed of variety development by using best practices and shared services"
+        },
+        {
+          "code": "3.4",
+          "description": "CGIAR & partner breeding programs accelerate variety development and quality by securing access and using novel, cutting-edge technologies"
+        },
+        {
+          "code": "3.5",
+          "description": "Public and private sector partners increase co-ownership and co-implementation of research and investment decisions"
+        },
+        {
+          "code": "3.6",
+          "description": "Seed sector actors increase their investments in scaling-up new varieties from CGIAR breeding pipelines"
+        },
+        {
+          "code": "3.7",
+          "description": "Farmers adopt climate-resilient, nutritious, market-demanded varieties more broadly and rapidly"
+        }
+      ]
+    }
+  ]
+}

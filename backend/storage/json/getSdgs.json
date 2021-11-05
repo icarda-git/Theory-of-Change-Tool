@@ -1,0 +1,2037 @@
+{
+  "sdgs" : [
+    {
+      "code" : "1",
+      "title" : "Goal 1: No Poverty",
+      "description" : "End poverty in all its forms everywhere",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG01.png",
+      "targets" : [
+        {
+          "code" : "1.1",
+          "title" : "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day",
+          "indicators" : [
+            {
+              "code" : "1.1.1",
+              "unsd_code" : "C010101",
+              "title" : "Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)"
+            }
+          ]
+        },
+        {
+          "code" : "1.2",
+          "title" : "By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+          "indicators" : [
+            {
+              "code" : "1.2.1",
+              "unsd_code" : "C010201",
+              "title" : "Proportion of population living below the national poverty line, by sex and age"
+            },
+            {
+              "code" : "1.2.2",
+              "unsd_code" : "C010202",
+              "title" : "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions"
+            }
+          ]
+        },
+        {
+          "code" : "1.3",
+          "title" : "Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable",
+          "indicators" : [
+            {
+              "code" : "1.3.1",
+              "unsd_code" : "C010301",
+              "title" : "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable"
+            }
+          ]
+        },
+        {
+          "code" : "1.4",
+          "title" : "By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance",
+          "indicators" : [
+            {
+              "code" : "1.4.1",
+              "unsd_code" : "C010401",
+              "title" : "Proportion of population living in households with access to basic services"
+            },
+            {
+              "code" : "1.4.2",
+              "unsd_code" : "C010402",
+              "title" : "Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure"
+            }
+          ]
+        },
+        {
+          "code" : "1.5",
+          "title" : "By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters",
+          "indicators" : [
+            {
+              "code" : "1.5.1",
+              "unsd_code" : "C200303",
+              "title" : "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population"
+            },
+            {
+              "code" : "1.5.2",
+              "unsd_code" : "C010502",
+              "title" : "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)"
+            },
+            {
+              "code" : "1.5.3",
+              "unsd_code" : "C200304",
+              "title" : "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030"
+            },
+            {
+              "code" : "1.5.4",
+              "unsd_code" : "C200305",
+              "title" : "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+            }
+          ]
+        },
+        {
+          "code" : "1.a",
+          "title" : "Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions",
+          "indicators" : [
+            {
+              "code" : "1.a.1",
+              "unsd_code" : "C010a04",
+              "title" : "Total official development assistance grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income"
+            },
+            {
+              "code" : "1.a.2",
+              "unsd_code" : "C010a02",
+              "title" : "Proportion of total government spending on essential services (education, health and social protection)"
+            }
+          ]
+        },
+        {
+          "code" : "1.b",
+          "title" : "Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions",
+          "indicators" : [
+            {
+              "code" : "1.b.1",
+              "unsd_code" : "C010b02",
+              "title" : "Pro-poor public social spending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "2",
+      "title" : "Goal 2: Zero Hunger",
+      "description" : "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG02.png",
+      "targets" : [
+        {
+          "code" : "2.1",
+          "title" : "By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round",
+          "indicators" : [
+            {
+              "code" : "2.1.2",
+              "unsd_code" : "C020102",
+              "title" : "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)"
+            }
+          ]
+        },
+        {
+          "code" : "2.2",
+          "title" : "By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons",
+          "indicators" : [
+            {
+              "code" : "2.2.1",
+              "unsd_code" : "C020201",
+              "title" : "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age"
+            },
+            {
+              "code" : "2.2.2",
+              "unsd_code" : "C020202",
+              "title" : "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)"
+            },
+            {
+              "code" : "2.2.3",
+              "unsd_code" : "C020203",
+              "title" : "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)"
+            }
+          ]
+        },
+        {
+          "code" : "2.3",
+          "title" : "By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment",
+          "indicators" : [
+            {
+              "code" : "2.3.1",
+              "unsd_code" : "C020301",
+              "title" : "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size"
+            },
+            {
+              "code" : "2.3.2",
+              "unsd_code" : "C020302",
+              "title" : "Average income of small-scale food producers, by sex and indigenous status"
+            }
+          ]
+        },
+        {
+          "code" : "2.4",
+          "title" : "By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality",
+          "indicators" : [
+            {
+              "code" : "2.4.1",
+              "unsd_code" : "C020401",
+              "title" : "Proportion of agricultural area under productive and sustainable agriculture"
+            }
+          ]
+        },
+        {
+          "code" : "2.5",
+          "title" : "By 2020, maintain the genetic diversity of seeds, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed and diversified seed and plant banks at the national, regional and international levels, and promote access to and fair and equitable sharing of benefits arising from the utilization of genetic resources and associated traditional knowledge, as internationally agreed",
+          "indicators" : [
+            {
+              "code" : "2.5.1",
+              "unsd_code" : "C020501",
+              "title" : "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities"
+            },
+            {
+              "code" : "2.5.2",
+              "unsd_code" : "C020503",
+              "title" : "Proportion of local breeds classified as being at risk of extinction"
+            }
+          ]
+        },
+        {
+          "code" : "2.a",
+          "title" : "Increase investment, including through enhanced international cooperation, in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity in developing countries, in particular least developed countries",
+          "indicators" : [
+            {
+              "code" : "2.a.1",
+              "unsd_code" : "C020a01",
+              "title" : "The agriculture orientation index for government expenditures"
+            },
+            {
+              "code" : "2.a.2",
+              "unsd_code" : "C020a02",
+              "title" : "Total official flows (official development assistance plus other official flows) to the agriculture sector"
+            }
+          ]
+        },
+        {
+          "code" : "2.b",
+          "title" : "Correct and prevent trade restrictions and distortions in world agricultural markets, including through the parallel elimination of all forms of agricultural export subsidies and all export measures with equivalent effect, in accordance with the mandate of the Doha Development Round",
+          "indicators" : [
+            {
+              "code" : "2.b.1",
+              "unsd_code" : "C020b02",
+              "title" : "Agricultural export subsidies"
+            }
+          ]
+        },
+        {
+          "code" : "2.c",
+          "title" : "Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility",
+          "indicators" : [
+            {
+              "code" : "2.c.1",
+              "unsd_code" : "C020c01",
+              "title" : "Indicator of food price anomalies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "3",
+      "title" : "Goal 3: Good Health and Well-Being for People",
+      "description" : "Ensure healthy lives and promote well-being for all at all ages",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG03.png",
+      "targets" : [
+        {
+          "code" : "3.1",
+          "title" : "By 2030, reduce the global maternal mortality ratio to less than 70 per 100,000 live births",
+          "indicators" : [
+            {
+              "code" : "3.1.2",
+              "unsd_code" : "C030102",
+              "title" : "Proportion of births attended by skilled health personnel"
+            }
+          ]
+        },
+        {
+          "code" : "3.2",
+          "title" : "By 2030, end preventable deaths of newborns and children under 5 years of age, with all countries aiming to reduce neonatal mortality to at least as low as 12 per 1,000 live births and under mortality to at least as low as 25 per 1,000 live births",
+          "indicators" : [
+            {
+              "code" : "3.2.1",
+              "unsd_code" : "C030201",
+              "title" : "Under‑5 mortality rate"
+            },
+            {
+              "code" : "3.2.2",
+              "unsd_code" : "C030202",
+              "title" : "Neonatal mortality rate"
+            }
+          ]
+        },
+        {
+          "code" : "3.3",
+          "title" : "By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases",
+          "indicators" : [
+            {
+              "code" : "3.3.1",
+              "unsd_code" : "C030301",
+              "title" : "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations"
+            },
+            {
+              "code" : "3.3.2",
+              "unsd_code" : "C030302",
+              "title" : "Tuberculosis incidence per 100,000 population"
+            },
+            {
+              "code" : "3.3.3",
+              "unsd_code" : "C030303",
+              "title" : "Malaria incidence per 1,000 population"
+            },
+            {
+              "code" : "3.3.4",
+              "unsd_code" : "C030304",
+              "title" : "Hepatitis B incidence per 100,000 population"
+            },
+            {
+              "code" : "3.3.5",
+              "unsd_code" : "C030305",
+              "title" : "Number of people requiring interventions against neglected tropical diseases"
+            }
+          ]
+        },
+        {
+          "code" : "3.4",
+          "title" : "By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being",
+          "indicators" : [
+            {
+              "code" : "3.4.1",
+              "unsd_code" : "C030401",
+              "title" : "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease"
+            },
+            {
+              "code" : "3.4.2",
+              "unsd_code" : "C030402",
+              "title" : "Suicide mortality rate"
+            }
+          ]
+        },
+        {
+          "code" : "3.5",
+          "title" : "Strengthen the prevention and treatment of substance abuse, including narcotic drug abuse and harmful use of alcohol",
+          "indicators" : [
+            {
+              "code" : "3.5.1",
+              "unsd_code" : "C030501",
+              "title" : "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders"
+            },
+            {
+              "code" : "3.5.2",
+              "unsd_code" : "C030502",
+              "title" : "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol"
+            }
+          ]
+        },
+        {
+          "code" : "3.6",
+          "title" : "By 2020, halve the number of global deaths and injuries from road traffic accidents",
+          "indicators" : [
+            {
+              "code" : "3.6.1",
+              "unsd_code" : "C030601",
+              "title" : "Death rate due to road traffic injuries"
+            }
+          ]
+        },
+        {
+          "code" : "3.7",
+          "title" : "By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes",
+          "indicators" : [
+            {
+              "code" : "3.7.1",
+              "unsd_code" : "C030701",
+              "title" : "Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods"
+            },
+            {
+              "code" : "3.7.2",
+              "unsd_code" : "C030702",
+              "title" : "Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group"
+            }
+          ]
+        },
+        {
+          "code" : "3.8",
+          "title" : "Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all",
+          "indicators" : [
+            {
+              "code" : "3.8.1",
+              "unsd_code" : "C030801",
+              "title" : "Coverage of essential health services"
+            },
+            {
+              "code" : "3.8.2",
+              "unsd_code" : "C030802",
+              "title" : "Proportion of population with large household expenditures on health as a share of total household expenditure or income"
+            }
+          ]
+        },
+        {
+          "code" : "3.9",
+          "title" : "By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination",
+          "indicators" : [
+            {
+              "code" : "3.9.1",
+              "unsd_code" : "C030901",
+              "title" : "Mortality rate attributed to household and ambient air pollution"
+            },
+            {
+              "code" : "3.9.2",
+              "unsd_code" : "C030902",
+              "title" : "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)"
+            },
+            {
+              "code" : "3.9.3",
+              "unsd_code" : "C030903",
+              "title" : "Mortality rate attributed to unintentional poisoning"
+            }
+          ]
+        },
+        {
+          "code" : "3.a",
+          "title" : "Strengthen the implementation of the World Health Organization Framework Convention on Tobacco Control in all countries, as appropriate",
+          "indicators" : [
+            {
+              "code" : "3.a.1",
+              "unsd_code" : "C030a01",
+              "title" : "Age-standardized prevalence of current tobacco use among persons aged 15 years and older"
+            }
+          ]
+        },
+        {
+          "code" : "3.b",
+          "title" : "Support the research and development of vaccines and medicines for the communicable and non‑communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all",
+          "indicators" : [
+            {
+              "code" : "3.b.1",
+              "unsd_code" : "C030b01",
+              "title" : "Proportion of the target population covered by all vaccines included in their national programme"
+            },
+            {
+              "code" : "3.b.2",
+              "unsd_code" : "C030b02",
+              "title" : "Total net official development assistance to medical research and basic health sectors"
+            },
+            {
+              "code" : "3.b.3",
+              "unsd_code" : "C030b03",
+              "title" : "Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis"
+            }
+          ]
+        },
+        {
+          "code" : "3.c",
+          "title" : "Substantially increase health financing and the recruitment, development, training and retention of the health workforce in developing countries, especially in least developed countries and small island developing States",
+          "indicators" : [
+            {
+              "code" : "3.c.1",
+              "unsd_code" : "C030c01",
+              "title" : "Health worker density and distribution"
+            }
+          ]
+        },
+        {
+          "code" : "3.d",
+          "title" : "Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks",
+          "indicators" : [
+            {
+              "code" : "3.d.1",
+              "unsd_code" : "C030d01",
+              "title" : "International Health Regulations (IHR) capacity and health emergency preparedness"
+            },
+            {
+              "code" : "3.d.2",
+              "unsd_code" : "C030d02",
+              "title" : "Percentage of bloodstream infections due to selected antimicrobial-resistant organismsi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "4",
+      "title" : "Goal 4: Quality Education",
+      "description" : "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG04.png",
+      "targets" : [
+        {
+          "code" : "4.1",
+          "title" : "By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes",
+          "indicators" : [
+            {
+              "code" : "4.1.2",
+              "unsd_code" : "C040102",
+              "title" : "Completion rate (primary education, lower secondary education, upper secondary education)"
+            }
+          ]
+        },
+        {
+          "code" : "4.2",
+          "title" : "By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre‑primary education so that they are ready for primary education",
+          "indicators" : [
+            {
+              "code" : "4.2.1",
+              "unsd_code" : "C040201",
+              "title" : "Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sexi"
+            },
+            {
+              "code" : "4.2.2",
+              "unsd_code" : "C040202",
+              "title" : "Participation rate in organized learning (one year before the official primary entry age), by sex"
+            }
+          ]
+        },
+        {
+          "code" : "4.3",
+          "title" : "By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university",
+          "indicators" : [
+            {
+              "code" : "4.3.1",
+              "unsd_code" : "C040301",
+              "title" : "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex"
+            }
+          ]
+        },
+        {
+          "code" : "4.4",
+          "title" : "By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship",
+          "indicators" : [
+            {
+              "code" : "4.4.1",
+              "unsd_code" : "C040401",
+              "title" : "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill"
+            }
+          ]
+        },
+        {
+          "code" : "4.5",
+          "title" : "By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations",
+          "indicators" : [
+            {
+              "code" : "4.5.1",
+              "unsd_code" : "C040501",
+              "title" : "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated"
+            }
+          ]
+        },
+        {
+          "code" : "4.6",
+          "title" : "By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy",
+          "indicators" : [
+            {
+              "code" : "4.6.1",
+              "unsd_code" : "C040601",
+              "title" : "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex"
+            }
+          ]
+        },
+        {
+          "code" : "4.7",
+          "title" : "By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture’s contribution to sustainable development",
+          "indicators" : [
+            {
+              "code" : "4.7.1",
+              "unsd_code" : "C200306",
+              "title" : "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment"
+            }
+          ]
+        },
+        {
+          "code" : "4.a",
+          "title" : "Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all",
+          "indicators" : [
+            {
+              "code" : "4.a.1",
+              "unsd_code" : "C040a01",
+              "title" : "Proportion of schools offering basic services, by type of service"
+            }
+          ]
+        },
+        {
+          "code" : "4.b",
+          "title" : "By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries",
+          "indicators" : [
+            {
+              "code" : "4.b.1",
+              "unsd_code" : "C040b01",
+              "title" : "Volume of official development assistance flows for scholarships by sector and type of study"
+            }
+          ]
+        },
+        {
+          "code" : "4.c",
+          "title" : "By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States",
+          "indicators" : [
+            {
+              "code" : "4.c.1",
+              "unsd_code" : "C040c01",
+              "title" : "Proportion of teachers with the minimum required qualifications, by education leveli"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "5",
+      "title" : "Goal 5: Gender Equality",
+      "description" : "Achieve gender equality and empower all women and girls",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG05.png",
+      "targets" : [
+        {
+          "code" : "5.2",
+          "title" : "Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking and sexual and other types of exploitation",
+          "indicators" : [
+            {
+              "code" : "5.2.1",
+              "unsd_code" : "C050201",
+              "title" : "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age"
+            },
+            {
+              "code" : "5.2.2",
+              "unsd_code" : "C050202",
+              "title" : "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence"
+            }
+          ]
+        },
+        {
+          "code" : "5.3",
+          "title" : "Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation",
+          "indicators" : [
+            {
+              "code" : "5.3.1",
+              "unsd_code" : "C050301",
+              "title" : "Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18"
+            },
+            {
+              "code" : "5.3.2",
+              "unsd_code" : "C050302",
+              "title" : "Proportion of girls and women aged 15–49 years who have undergone female genital mutilation/cutting, by age"
+            }
+          ]
+        },
+        {
+          "code" : "5.4",
+          "title" : "Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate",
+          "indicators" : [
+            {
+              "code" : "5.4.1",
+              "unsd_code" : "C050401",
+              "title" : "Proportion of time spent on unpaid domestic and care work, by sex, age and location"
+            }
+          ]
+        },
+        {
+          "code" : "5.5",
+          "title" : "Ensure women’s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life",
+          "indicators" : [
+            {
+              "code" : "5.5.1",
+              "unsd_code" : "C050501",
+              "title" : "Proportion of seats held by women in (a) national parliaments and (b) local governments"
+            },
+            {
+              "code" : "5.5.2",
+              "unsd_code" : "C050502",
+              "title" : "Proportion of women in managerial positions"
+            }
+          ]
+        },
+        {
+          "code" : "5.6",
+          "title" : "Ensure universal access to sexual and reproductive health and reproductive rights as agreed in accordance with the Programme of Action of the International Conference on Population and Development and the Beijing Platform for Action and the outcome documents of their review conferences",
+          "indicators" : [
+            {
+              "code" : "5.6.1",
+              "unsd_code" : "C050601",
+              "title" : "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care"
+            },
+            {
+              "code" : "5.6.2",
+              "unsd_code" : "C050602",
+              "title" : "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education"
+            }
+          ]
+        },
+        {
+          "code" : "5.a",
+          "title" : "Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws",
+          "indicators" : [
+            {
+              "code" : "5.a.1",
+              "unsd_code" : "C050a01",
+              "title" : "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure"
+            },
+            {
+              "code" : "5.a.2",
+              "unsd_code" : "C050a02",
+              "title" : "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control"
+            }
+          ]
+        },
+        {
+          "code" : "5.b",
+          "title" : "Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women",
+          "indicators" : [
+            {
+              "code" : "5.b.1",
+              "unsd_code" : "C050b01",
+              "title" : "Proportion of individuals who own a mobile telephone, by sex"
+            }
+          ]
+        },
+        {
+          "code" : "5.c",
+          "title" : "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels",
+          "indicators" : [
+            {
+              "code" : "5.c.1",
+              "unsd_code" : "C050c01",
+              "title" : "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "6",
+      "title" : "Goal 6: Clean Water and Sanitation",
+      "description" : "Ensure availability and sustainable management of water and sanitation for all",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG06.png",
+      "targets" : [
+        {
+          "code" : "6.2",
+          "title" : "By 2030, achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations",
+          "indicators" : [
+            {
+              "code" : "6.2.1",
+              "unsd_code" : "C060201",
+              "title" : "Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water"
+            }
+          ]
+        },
+        {
+          "code" : "6.3",
+          "title" : "By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally",
+          "indicators" : [
+            {
+              "code" : "6.3.1",
+              "unsd_code" : "C060303",
+              "title" : "Proportion of domestic and industrial wastewater flows safely treated"
+            },
+            {
+              "code" : "6.3.2",
+              "unsd_code" : "C060302",
+              "title" : "Proportion of bodies of water with good ambient water quality"
+            }
+          ]
+        },
+        {
+          "code" : "6.4",
+          "title" : "By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity",
+          "indicators" : [
+            {
+              "code" : "6.4.1",
+              "unsd_code" : "C060401",
+              "title" : "Change in water-use efficiency over time"
+            },
+            {
+              "code" : "6.4.2",
+              "unsd_code" : "C060402",
+              "title" : "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources"
+            }
+          ]
+        },
+        {
+          "code" : "6.5",
+          "title" : "By 2030, implement integrated water resources management at all levels, including through transboundary cooperation as appropriate",
+          "indicators" : [
+            {
+              "code" : "6.5.1",
+              "unsd_code" : "C060501",
+              "title" : "Degree of integrated water resources management"
+            },
+            {
+              "code" : "6.5.2",
+              "unsd_code" : "C060502",
+              "title" : "Proportion of transboundary basin area with an operational arrangement for water cooperation"
+            }
+          ]
+        },
+        {
+          "code" : "6.6",
+          "title" : "By 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes",
+          "indicators" : [
+            {
+              "code" : "6.6.1",
+              "unsd_code" : "C060601",
+              "title" : "Change in the extent of water-related ecosystems over time"
+            }
+          ]
+        },
+        {
+          "code" : "6.a",
+          "title" : "By 2030, expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies",
+          "indicators" : [
+            {
+              "code" : "6.a.1",
+              "unsd_code" : "C060a01",
+              "title" : "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan"
+            }
+          ]
+        },
+        {
+          "code" : "6.b",
+          "title" : "Support and strengthen the participation of local communities in improving water and sanitation management",
+          "indicators" : [
+            {
+              "code" : "6.b.1",
+              "unsd_code" : "C060b01",
+              "title" : "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "7",
+      "title" : "Goal 7: Affordable and Clean Energy",
+      "description" : "Ensure access to affordable, reliable, sustainable and modern energy for all",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG07.png",
+      "targets" : [
+        {
+          "code" : "7.1",
+          "title" : "By 2030, ensure universal access to affordable, reliable and modern energy services",
+          "indicators" : [
+            {
+              "code" : "7.1.2",
+              "unsd_code" : "C070102",
+              "title" : "Proportion of population with primary reliance on clean fuels and technology"
+            }
+          ]
+        },
+        {
+          "code" : "7.2",
+          "title" : "By 2030, increase substantially the share of renewable energy in the global energy mix",
+          "indicators" : [
+            {
+              "code" : "7.2.1",
+              "unsd_code" : "C070201",
+              "title" : "Renewable energy share in the total final energy consumption"
+            }
+          ]
+        },
+        {
+          "code" : "7.3",
+          "title" : "By 2030, double the global rate of improvement in energy efficiency",
+          "indicators" : [
+            {
+              "code" : "7.3.1",
+              "unsd_code" : "C070301",
+              "title" : "Energy intensity measured in terms of primary energy and GDP"
+            }
+          ]
+        },
+        {
+          "code" : "7.a",
+          "title" : "By 2030, enhance international cooperation to facilitate access to clean energy research and technology, including renewable energy, energy efficiency and advanced and cleaner fossil-fuel technology, and promote investment in energy infrastructure and clean energy technology",
+          "indicators" : [
+            {
+              "code" : "7.a.1",
+              "unsd_code" : "C070a01",
+              "title" : "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems"
+            }
+          ]
+        },
+        {
+          "code" : "7.b",
+          "title" : "By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support",
+          "indicators" : [
+            {
+              "code" : "7.b.1",
+              "unsd_code" : "C200208",
+              "title" : "Installed renewable energy-generating capacity in developing countries (in watts per capita)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "8",
+      "title" : "Goal 8: Decent Work and Economic Growth",
+      "description" : "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG08.png",
+      "targets" : [
+        {
+          "code" : "8.2",
+          "title" : "Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors",
+          "indicators" : [
+            {
+              "code" : "8.2.1",
+              "unsd_code" : "C080201",
+              "title" : "Annual growth rate of real GDP per employed person"
+            }
+          ]
+        },
+        {
+          "code" : "8.3",
+          "title" : "Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services",
+          "indicators" : [
+            {
+              "code" : "8.3.1",
+              "unsd_code" : "C080302",
+              "title" : "Proportion of informal employment in total employment, by sector and sex"
+            }
+          ]
+        },
+        {
+          "code" : "8.4",
+          "title" : "Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10‑Year Framework of Programmes on Sustainable Consumption and Production, with developed countries taking the lead",
+          "indicators" : [
+            {
+              "code" : "8.4.1",
+              "unsd_code" : "C200202",
+              "title" : "Material footprint, material footprint per capita, and material footprint per GDP"
+            },
+            {
+              "code" : "8.4.2",
+              "unsd_code" : "C200203",
+              "title" : "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP"
+            }
+          ]
+        },
+        {
+          "code" : "8.5",
+          "title" : "By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value",
+          "indicators" : [
+            {
+              "code" : "8.5.1",
+              "unsd_code" : "C080501",
+              "title" : "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities"
+            },
+            {
+              "code" : "8.5.2",
+              "unsd_code" : "C080502",
+              "title" : "Unemployment rate, by sex, age and persons with disabilities"
+            }
+          ]
+        },
+        {
+          "code" : "8.6",
+          "title" : "By 2020, substantially reduce the proportion of youth not in employment, education or training",
+          "indicators" : [
+            {
+              "code" : "8.6.1",
+              "unsd_code" : "C080601",
+              "title" : "Proportion of youth (aged 15–24 years) not in education, employment or training"
+            }
+          ]
+        },
+        {
+          "code" : "8.7",
+          "title" : "Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms",
+          "indicators" : [
+            {
+              "code" : "8.7.1",
+              "unsd_code" : "C080701",
+              "title" : "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age"
+            }
+          ]
+        },
+        {
+          "code" : "8.8",
+          "title" : "Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment",
+          "indicators" : [
+            {
+              "code" : "8.8.1",
+              "unsd_code" : "C080801",
+              "title" : "Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status"
+            },
+            {
+              "code" : "8.8.2",
+              "unsd_code" : "C080802",
+              "title" : "Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status"
+            }
+          ]
+        },
+        {
+          "code" : "8.9",
+          "title" : "By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products",
+          "indicators" : [
+            {
+              "code" : "8.9.1",
+              "unsd_code" : "C080901",
+              "title" : "Tourism direct GDP as a proportion of total GDP and in growth rate"
+            }
+          ]
+        },
+        {
+          "code" : "8.10",
+          "title" : "Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all",
+          "indicators" : [
+            {
+              "code" : "8.10.1",
+              "unsd_code" : "C081001",
+              "title" : "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults"
+            },
+            {
+              "code" : "8.10.2",
+              "unsd_code" : "C081002",
+              "title" : "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider"
+            }
+          ]
+        },
+        {
+          "code" : "8.a",
+          "title" : "Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-related Technical Assistance to Least Developed Countries",
+          "indicators" : [
+            {
+              "code" : "8.a.1",
+              "unsd_code" : "C080a01",
+              "title" : "Aid for Trade commitments and disbursements"
+            }
+          ]
+        },
+        {
+          "code" : "8.b",
+          "title" : "By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization",
+          "indicators" : [
+            {
+              "code" : "8.b.1",
+              "unsd_code" : "C080b01",
+              "title" : "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "9",
+      "title" : "Goal 9: Industry, Innovation, and Infrastructure",
+      "description" : "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG09.png",
+      "targets" : [
+        {
+          "code" : "9.1",
+          "title" : "Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all",
+          "indicators" : [
+            {
+              "code" : "9.1.2",
+              "unsd_code" : "C090102",
+              "title" : "Passenger and freight volumes, by mode of transport"
+            }
+          ]
+        },
+        {
+          "code" : "9.2",
+          "title" : "Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry’s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries",
+          "indicators" : [
+            {
+              "code" : "9.2.1",
+              "unsd_code" : "C090201",
+              "title" : "Manufacturing value added as a proportion of GDP and per capita"
+            },
+            {
+              "code" : "9.2.2",
+              "unsd_code" : "C090202",
+              "title" : "Manufacturing employment as a proportion of total employment"
+            }
+          ]
+        },
+        {
+          "code" : "9.3",
+          "title" : "Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets",
+          "indicators" : [
+            {
+              "code" : "9.3.1",
+              "unsd_code" : "C090301",
+              "title" : "Proportion of small-scale industries in total industry value added"
+            },
+            {
+              "code" : "9.3.2",
+              "unsd_code" : "C090302",
+              "title" : "Proportion of small-scale industries with a loan or line of credit"
+            }
+          ]
+        },
+        {
+          "code" : "9.4",
+          "title" : "By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities",
+          "indicators" : [
+            {
+              "code" : "9.4.1",
+              "unsd_code" : "C090401",
+              "title" : "CO2 emission per unit of value added"
+            }
+          ]
+        },
+        {
+          "code" : "9.5",
+          "title" : "Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending",
+          "indicators" : [
+            {
+              "code" : "9.5.1",
+              "unsd_code" : "C090501",
+              "title" : "Research and development expenditure as a proportion of GDP"
+            },
+            {
+              "code" : "9.5.2",
+              "unsd_code" : "C090502",
+              "title" : "Researchers (in full-time equivalent) per million inhabitants"
+            }
+          ]
+        },
+        {
+          "code" : "9.a",
+          "title" : "Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States",
+          "indicators" : [
+            {
+              "code" : "9.a.1",
+              "unsd_code" : "C090a01",
+              "title" : "Total official international support (official development assistance plus other official flows) to infrastructure"
+            }
+          ]
+        },
+        {
+          "code" : "9.b",
+          "title" : "Support domestic technology development, research and innovation in developing countries, including by ensuring a conducive policy environment for, inter alia, industrial diversification and value addition to commodities",
+          "indicators" : [
+            {
+              "code" : "9.b.1",
+              "unsd_code" : "C090b01",
+              "title" : "Proportion of medium and high-tech industry value added in total value added"
+            }
+          ]
+        },
+        {
+          "code" : "9.c",
+          "title" : "Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020",
+          "indicators" : [
+            {
+              "code" : "9.c.1",
+              "unsd_code" : "C090c01",
+              "title" : "Proportion of population covered by a mobile network, by technology"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "10",
+      "title" : "Goal 10: Reducing Inequalities",
+      "description" : "Reduce inequality within and among countries",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG10.png",
+      "targets" : [
+        {
+          "code" : "10.2",
+          "title" : "By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status",
+          "indicators" : [
+            {
+              "code" : "10.2.1",
+              "unsd_code" : "C100201",
+              "title" : "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities"
+            }
+          ]
+        },
+        {
+          "code" : "10.3",
+          "title" : "Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action in this regard",
+          "indicators" : [
+            {
+              "code" : "10.3.1",
+              "unsd_code" : "C200204",
+              "title" : "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law"
+            }
+          ]
+        },
+        {
+          "code" : "10.4",
+          "title" : "Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve greater equality",
+          "indicators" : [
+            {
+              "code" : "10.4.1",
+              "unsd_code" : "C100401",
+              "title" : "Labour share of GDP"
+            },
+            {
+              "code" : "10.4.2",
+              "unsd_code" : "C100402",
+              "title" : "Redistributive impact of fiscal policy4"
+            }
+          ]
+        },
+        {
+          "code" : "10.5",
+          "title" : "Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations",
+          "indicators" : [
+            {
+              "code" : "10.5.1",
+              "unsd_code" : "C100501",
+              "title" : "Financial Soundness Indicators"
+            }
+          ]
+        },
+        {
+          "code" : "10.6",
+          "title" : "Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions",
+          "indicators" : [
+            {
+              "code" : "10.6.1",
+              "unsd_code" : "C200205",
+              "title" : "Proportion of members and voting rights of developing countries in international organizations"
+            }
+          ]
+        },
+        {
+          "code" : "10.7",
+          "title" : "Facilitate orderly, safe, regular and responsible migration and mobility of people, including through the implementation of planned and well-managed migration policies",
+          "indicators" : [
+            {
+              "code" : "10.7.1",
+              "unsd_code" : "C100701",
+              "title" : "Recruitment cost borne by employee as a proportion of monthly income earned in country of destination"
+            },
+            {
+              "code" : "10.7.2",
+              "unsd_code" : "C100702",
+              "title" : "Number of countries with migration policies that facilitate orderly, safe, regular and responsible migration and mobility of people"
+            },
+            {
+              "code" : "10.7.3",
+              "unsd_code" : "C100703",
+              "title" : "Number of people who died or disappeared in the process of migration towards an international destinationi"
+            },
+            {
+              "code" : "10.7.4",
+              "unsd_code" : "C100704",
+              "title" : "Proportion of the population who are refugees, by country of origin"
+            }
+          ]
+        },
+        {
+          "code" : "10.a",
+          "title" : "Implement the principle of special and differential treatment for developing countries, in particular least developed countries, in accordance with World Trade Organization agreements",
+          "indicators" : [
+            {
+              "code" : "10.a.1",
+              "unsd_code" : "C100a01",
+              "title" : "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff"
+            }
+          ]
+        },
+        {
+          "code" : "10.b",
+          "title" : "Encourage official development assistance and financial flows, including foreign direct investment, to States where the need is greatest, in particular least developed countries, African countries, small island developing States and landlocked developing countries, in accordance with their national plans and programmes",
+          "indicators" : [
+            {
+              "code" : "10.b.1",
+              "unsd_code" : "C100b01",
+              "title" : "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)"
+            }
+          ]
+        },
+        {
+          "code" : "10.c",
+          "title" : "By 2030, reduce to less than 3 per cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5 per cent",
+          "indicators" : [
+            {
+              "code" : "10.c.1",
+              "unsd_code" : "C100c01",
+              "title" : "Remittance costs as a proportion of the amount remitted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "11",
+      "title" : "Goal 11: Sustainable Cities and Communities",
+      "description" : "Make cities and human settlements inclusive, safe, resilient and sustainable",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG11.png",
+      "targets" : [
+        {
+          "code" : "11.2",
+          "title" : "By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons",
+          "indicators" : [
+            {
+              "code" : "11.2.1",
+              "unsd_code" : "C110201",
+              "title" : "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities"
+            }
+          ]
+        },
+        {
+          "code" : "11.3",
+          "title" : "By 2030, enhance inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management in all countries",
+          "indicators" : [
+            {
+              "code" : "11.3.1",
+              "unsd_code" : "C110301",
+              "title" : "Ratio of land consumption rate to population growth rate"
+            },
+            {
+              "code" : "11.3.2",
+              "unsd_code" : "C110302",
+              "title" : "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically"
+            }
+          ]
+        },
+        {
+          "code" : "11.4",
+          "title" : "Strengthen efforts to protect and safeguard the world’s cultural and natural heritage",
+          "indicators" : [
+            {
+              "code" : "11.4.1",
+              "unsd_code" : "C110401",
+              "title" : "Total per capita expenditure on the preservation, protection and conservation of all cultural and natural heritage, by source of funding (public, private), type of heritage (cultural, natural) and level of government (national, regional, and local/municipal)"
+            }
+          ]
+        },
+        {
+          "code" : "11.5",
+          "title" : "By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations",
+          "indicators" : [
+            {
+              "code" : "11.5.1",
+              "unsd_code" : "C200303",
+              "title" : "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population"
+            },
+            {
+              "code" : "11.5.2",
+              "unsd_code" : "C110502",
+              "title" : "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters"
+            }
+          ]
+        },
+        {
+          "code" : "11.6",
+          "title" : "By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management",
+          "indicators" : [
+            {
+              "code" : "11.6.1",
+              "unsd_code" : "C110603",
+              "title" : "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities"
+            },
+            {
+              "code" : "11.6.2",
+              "unsd_code" : "C110602",
+              "title" : "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)"
+            }
+          ]
+        },
+        {
+          "code" : "11.7",
+          "title" : "By 2030, provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities",
+          "indicators" : [
+            {
+              "code" : "11.7.1",
+              "unsd_code" : "C110701",
+              "title" : "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities"
+            },
+            {
+              "code" : "11.7.2",
+              "unsd_code" : "C110702",
+              "title" : "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months"
+            }
+          ]
+        },
+        {
+          "code" : "11.a",
+          "title" : "Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning",
+          "indicators" : [
+            {
+              "code" : "11.a.1",
+              "unsd_code" : "C110a02",
+              "title" : "Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space"
+            }
+          ]
+        },
+        {
+          "code" : "11.b",
+          "title" : "By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels",
+          "indicators" : [
+            {
+              "code" : "11.b.1",
+              "unsd_code" : "C200304",
+              "title" : "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030"
+            },
+            {
+              "code" : "11.b.2",
+              "unsd_code" : "C200305",
+              "title" : "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "12",
+      "title" : "Goal 12: Responsible Consumption and Production",
+      "description" : "Ensure sustainable consumption and production patterns",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG12.png",
+      "targets" : [
+        {
+          "code" : "12.2",
+          "title" : "By 2030, achieve the sustainable management and efficient use of natural resources",
+          "indicators" : [
+            {
+              "code" : "12.2.1",
+              "unsd_code" : "C200202",
+              "title" : "Material footprint, material footprint per capita, and material footprint per GDP"
+            },
+            {
+              "code" : "12.2.2",
+              "unsd_code" : "C200203",
+              "title" : "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP"
+            }
+          ]
+        },
+        {
+          "code" : "12.3",
+          "title" : "By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses",
+          "indicators" : [
+            {
+              "code" : "12.3.1",
+              "unsd_code" : "C120301",
+              "title" : "(a) Food loss index and (b) food waste index"
+            }
+          ]
+        },
+        {
+          "code" : "12.4",
+          "title" : "By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment",
+          "indicators" : [
+            {
+              "code" : "12.4.1",
+              "unsd_code" : "C120401",
+              "title" : "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement"
+            },
+            {
+              "code" : "12.4.2",
+              "unsd_code" : "C120402",
+              "title" : "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment"
+            }
+          ]
+        },
+        {
+          "code" : "12.5",
+          "title" : "By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse",
+          "indicators" : [
+            {
+              "code" : "12.5.1",
+              "unsd_code" : "C120501",
+              "title" : "National recycling rate, tons of material recycled"
+            }
+          ]
+        },
+        {
+          "code" : "12.6",
+          "title" : "Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle",
+          "indicators" : [
+            {
+              "code" : "12.6.1",
+              "unsd_code" : "C120601",
+              "title" : "Number of companies publishing sustainability reports"
+            }
+          ]
+        },
+        {
+          "code" : "12.7",
+          "title" : "Promote public procurement practices that are sustainable, in accordance with national policies and priorities",
+          "indicators" : [
+            {
+              "code" : "12.7.1",
+              "unsd_code" : "C120701",
+              "title" : "Degree of sustainable public procurement policies and action plan implementation"
+            }
+          ]
+        },
+        {
+          "code" : "12.8",
+          "title" : "By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature",
+          "indicators" : [
+            {
+              "code" : "12.8.1",
+              "unsd_code" : "C200306",
+              "title" : "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment"
+            }
+          ]
+        },
+        {
+          "code" : "12.a",
+          "title" : "Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production",
+          "indicators" : [
+            {
+              "code" : "12.a.1",
+              "unsd_code" : "C200208",
+              "title" : "Installed renewable energy-generating capacity in developing countries (in watts per capita)"
+            }
+          ]
+        },
+        {
+          "code" : "12.b",
+          "title" : "Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products",
+          "indicators" : [
+            {
+              "code" : "12.b.1",
+              "unsd_code" : "C120b02",
+              "title" : "Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability"
+            }
+          ]
+        },
+        {
+          "code" : "12.c",
+          "title" : "Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities",
+          "indicators" : [
+            {
+              "code" : "12.c.1",
+              "unsd_code" : "C120c01",
+              "title" : "Amount of fossil-fuel subsidies per unit of GDP (production and consumption)i"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "13",
+      "title" : "Goal 13: Climate Action",
+      "description" : "Take urgent action to combat climate change and its impacts[b]",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG13.png",
+      "targets" : [
+        {
+          "code" : "13.1",
+          "title" : "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries",
+          "indicators" : [
+            {
+              "code" : "13.1.2",
+              "unsd_code" : "C200304",
+              "title" : "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030"
+            },
+            {
+              "code" : "13.1.3",
+              "unsd_code" : "C200305",
+              "title" : "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+            }
+          ]
+        },
+        {
+          "code" : "13.2",
+          "title" : "Integrate climate change measures into national policies, strategies and planning",
+          "indicators" : [
+            {
+              "code" : "13.2.1",
+              "unsd_code" : "C130203",
+              "title" : "Number of countries with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications"
+            },
+            {
+              "code" : "13.2.2",
+              "unsd_code" : "C130202",
+              "title" : "Total greenhouse gas emissions per year"
+            }
+          ]
+        },
+        {
+          "code" : "13.3",
+          "title" : "Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning",
+          "indicators" : [
+            {
+              "code" : "13.3.1",
+              "unsd_code" : "C200306",
+              "title" : "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment"
+            }
+          ]
+        },
+        {
+          "code" : "13.a",
+          "title" : "Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100 billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions and transparency on implementation and fully operationalize the Green Climate Fund through its capitalization as soon as possible",
+          "indicators" : [
+            {
+              "code" : "13.a.1",
+              "unsd_code" : "C130a02",
+              "title" : "Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025"
+            }
+          ]
+        },
+        {
+          "code" : "13.b",
+          "title" : "Promote mechanisms for raising capacity for effective climate change-related planning and management in least developed countries and small island developing States, including focusing on women, youth and local and marginalized communities",
+          "indicators" : [
+            {
+              "code" : "13.b.1",
+              "unsd_code" : "C130b02",
+              "title" : "Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "14",
+      "title" : "Goal 14: Life Below Water",
+      "description" : "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG14.png",
+      "targets" : [
+        {
+          "code" : "14.2",
+          "title" : "By 2020, sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration in order to achieve healthy and productive oceans",
+          "indicators" : [
+            {
+              "code" : "14.2.1",
+              "unsd_code" : "C140201",
+              "title" : "Number of countries using ecosystem-based approaches to managing marine areas"
+            }
+          ]
+        },
+        {
+          "code" : "14.3",
+          "title" : "Minimize and address the impacts of ocean acidification, including through enhanced scientific cooperation at all levels",
+          "indicators" : [
+            {
+              "code" : "14.3.1",
+              "unsd_code" : "C140301",
+              "title" : "Average marine acidity (pH) measured at agreed suite of representative sampling stations"
+            }
+          ]
+        },
+        {
+          "code" : "14.4",
+          "title" : "By 2020, effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics",
+          "indicators" : [
+            {
+              "code" : "14.4.1",
+              "unsd_code" : "C140401",
+              "title" : "Proportion of fish stocks within biologically sustainable levels"
+            }
+          ]
+        },
+        {
+          "code" : "14.5",
+          "title" : "By 2020, conserve at least 10 per cent of coastal and marine areas, consistent with national and international law and based on the best available scientific information",
+          "indicators" : [
+            {
+              "code" : "14.5.1",
+              "unsd_code" : "C140501",
+              "title" : "Coverage of protected areas in relation to marine areas"
+            }
+          ]
+        },
+        {
+          "code" : "14.6",
+          "title" : "By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from introducing new such subsidies, recognizing that appropriate and effective special and differential treatment for developing and least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation4",
+          "indicators" : [
+            {
+              "code" : "14.6.1",
+              "unsd_code" : "C140601",
+              "title" : "Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing"
+            }
+          ]
+        },
+        {
+          "code" : "14.7",
+          "title" : "By 2030, increase the economic benefits to small island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism",
+          "indicators" : [
+            {
+              "code" : "14.7.1",
+              "unsd_code" : "C140701",
+              "title" : "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries"
+            }
+          ]
+        },
+        {
+          "code" : "14.a",
+          "title" : "Increase scientific knowledge, develop research capacity and transfer marine technology, taking into account the Intergovernmental Oceanographic Commission Criteria and Guidelines on the Transfer of Marine Technology, in order to improve ocean health and to enhance the contribution of marine biodiversity to the development of developing countries, in particular small island developing States and least developed countries",
+          "indicators" : [
+            {
+              "code" : "14.a.1",
+              "unsd_code" : "C140a01",
+              "title" : "Proportion of total research budget allocated to research in the field of marine technology"
+            }
+          ]
+        },
+        {
+          "code" : "14.b",
+          "title" : "Provide access for small-scale artisanal fishers to marine resources and markets",
+          "indicators" : [
+            {
+              "code" : "14.b.1",
+              "unsd_code" : "C140b01",
+              "title" : "Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries"
+            }
+          ]
+        },
+        {
+          "code" : "14.c",
+          "title" : "Enhance the conservation and sustainable use of oceans and their resources by implementing international law as reflected in the United Nations Convention on the Law of the Sea, which provides the legal framework for the conservation and sustainable use of oceans and their resources, as recalled in paragraph 158 of “The future we want”",
+          "indicators" : [
+            {
+              "code" : "14.c.1",
+              "unsd_code" : "C140c01",
+              "title" : "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "15",
+      "title" : "Goal 15: Life on Land",
+      "description" : "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG15.png",
+      "targets" : [
+        {
+          "code" : "15.1",
+          "title" : "By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements",
+          "indicators" : [
+            {
+              "code" : "15.1.2",
+              "unsd_code" : "C150102",
+              "title" : "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type"
+            }
+          ]
+        },
+        {
+          "code" : "15.2",
+          "title" : "By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally",
+          "indicators" : [
+            {
+              "code" : "15.2.1",
+              "unsd_code" : "C150201",
+              "title" : "Progress towards sustainable forest management"
+            }
+          ]
+        },
+        {
+          "code" : "15.3",
+          "title" : "By 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world",
+          "indicators" : [
+            {
+              "code" : "15.3.1",
+              "unsd_code" : "C150301",
+              "title" : "Proportion of land that is degraded over total land area"
+            }
+          ]
+        },
+        {
+          "code" : "15.4",
+          "title" : "By 2030, ensure the conservation of mountain ecosystems, including their biodiversity, in order to enhance their capacity to provide benefits that are essential for sustainable development",
+          "indicators" : [
+            {
+              "code" : "15.4.1",
+              "unsd_code" : "C150401",
+              "title" : "Coverage by protected areas of important sites for mountain biodiversity"
+            },
+            {
+              "code" : "15.4.2",
+              "unsd_code" : "C150402",
+              "title" : "Mountain Green Cover Index"
+            }
+          ]
+        },
+        {
+          "code" : "15.5",
+          "title" : "Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and, by 2020, protect and prevent the extinction of threatened species",
+          "indicators" : [
+            {
+              "code" : "15.5.1",
+              "unsd_code" : "C150501",
+              "title" : "Red List Index"
+            }
+          ]
+        },
+        {
+          "code" : "15.6",
+          "title" : "Promote fair and equitable sharing of the benefits arising from the utilization of genetic resources and promote appropriate access to such resources, as internationally agreed",
+          "indicators" : [
+            {
+              "code" : "15.6.1",
+              "unsd_code" : "C150601",
+              "title" : "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits"
+            }
+          ]
+        },
+        {
+          "code" : "15.7",
+          "title" : "Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products",
+          "indicators" : [
+            {
+              "code" : "15.7.1",
+              "unsd_code" : "C200206",
+              "title" : "Proportion of traded wildlife that was poached or illicitly trafficked"
+            }
+          ]
+        },
+        {
+          "code" : "15.8",
+          "title" : "By 2020, introduce measures to prevent the introduction and significantly reduce the impact of invasive alien species on land and water ecosystems and control or eradicate the priority species",
+          "indicators" : [
+            {
+              "code" : "15.8.1",
+              "unsd_code" : "C150801",
+              "title" : "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species"
+            }
+          ]
+        },
+        {
+          "code" : "15.9",
+          "title" : "By 2020, integrate ecosystem and biodiversity values into national and local planning, development processes, poverty reduction strategies and accounts",
+          "indicators" : [
+            {
+              "code" : "15.9.1",
+              "unsd_code" : "C150902",
+              "title" : "(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported towards these targets; and (b) integration of biodiversity into national accounting and reporting systems, defined as implementation of the System of Environmental-Economic Accounting"
+            }
+          ]
+        },
+        {
+          "code" : "15.a",
+          "title" : "Mobilize and significantly increase financial resources from all sources to conserve and sustainably use biodiversity and ecosystems",
+          "indicators" : [
+            {
+              "code" : "15.a.1",
+              "unsd_code" : "C200210",
+              "title" : "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments"
+            }
+          ]
+        },
+        {
+          "code" : "15.b",
+          "title" : "Mobilize significant resources from all sources and at all levels to finance sustainable forest management and provide adequate incentives to developing countries to advance such management, including for conservation and reforestation",
+          "indicators" : [
+            {
+              "code" : "15.b.1",
+              "unsd_code" : "C200210",
+              "title" : "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments"
+            }
+          ]
+        },
+        {
+          "code" : "15.c",
+          "title" : "Enhance global support for efforts to combat poaching and trafficking of protected species, including by increasing the capacity of local communities to pursue sustainable livelihood opportunities",
+          "indicators" : [
+            {
+              "code" : "15.c.1",
+              "unsd_code" : "C200206",
+              "title" : "Proportion of traded wildlife that was poached or illicitly trafficked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "16",
+      "title" : "Goal 16: Peace, Justice and Strong Institutions",
+      "description" : "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG16.png",
+      "targets" : [
+        {
+          "code" : "16.1",
+          "title" : "Significantly reduce all forms of violence and related death rates everywhere",
+          "indicators" : [
+            {
+              "code" : "16.1.2",
+              "unsd_code" : "C160102",
+              "title" : "Conflict-related deaths per 100,000 population, by sex, age and cause"
+            },
+            {
+              "code" : "16.1.3",
+              "unsd_code" : "C160103",
+              "title" : "Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months"
+            },
+            {
+              "code" : "16.1.4",
+              "unsd_code" : "C160104",
+              "title" : "Proportion of population that feel safe walking alone around the area they live"
+            }
+          ]
+        },
+        {
+          "code" : "16.2",
+          "title" : "End abuse, exploitation, trafficking and all forms of violence against and torture of children",
+          "indicators" : [
+            {
+              "code" : "16.2.1",
+              "unsd_code" : "C160201",
+              "title" : "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month"
+            },
+            {
+              "code" : "16.2.2",
+              "unsd_code" : "C160202",
+              "title" : "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation"
+            },
+            {
+              "code" : "16.2.3",
+              "unsd_code" : "C160203",
+              "title" : "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18"
+            }
+          ]
+        },
+        {
+          "code" : "16.3",
+          "title" : "Promote the rule of law at the national and international levels and ensure equal access to justice for all",
+          "indicators" : [
+            {
+              "code" : "16.3.1",
+              "unsd_code" : "C160301",
+              "title" : "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms"
+            },
+            {
+              "code" : "16.3.2",
+              "unsd_code" : "C160302",
+              "title" : "Unsentenced detainees as a proportion of overall prison population"
+            },
+            {
+              "code" : "16.3.3",
+              "unsd_code" : "C160303",
+              "title" : "Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism"
+            }
+          ]
+        },
+        {
+          "code" : "16.4",
+          "title" : "By 2030, significantly reduce illicit financial and arms flows, strengthen the recovery and return of stolen assets and combat all forms of organized crime",
+          "indicators" : [
+            {
+              "code" : "16.4.1",
+              "unsd_code" : "C160401",
+              "title" : "Total value of inward and outward illicit financial flows (in current United States dollars)"
+            },
+            {
+              "code" : "16.4.2",
+              "unsd_code" : "C160402",
+              "title" : "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments"
+            }
+          ]
+        },
+        {
+          "code" : "16.5",
+          "title" : "Substantially reduce corruption and bribery in all their forms",
+          "indicators" : [
+            {
+              "code" : "16.5.1",
+              "unsd_code" : "C160501",
+              "title" : "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months"
+            },
+            {
+              "code" : "16.5.2",
+              "unsd_code" : "C160502",
+              "title" : "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months"
+            }
+          ]
+        },
+        {
+          "code" : "16.6",
+          "title" : "Develop effective, accountable and transparent institutions at all levels",
+          "indicators" : [
+            {
+              "code" : "16.6.1",
+              "unsd_code" : "C160601",
+              "title" : "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)"
+            },
+            {
+              "code" : "16.6.2",
+              "unsd_code" : "C160602",
+              "title" : "Proportion of population satisfied with their last experience of public services"
+            }
+          ]
+        },
+        {
+          "code" : "16.7",
+          "title" : "Ensure responsive, inclusive, participatory and representative decision-making at all levels",
+          "indicators" : [
+            {
+              "code" : "16.7.1",
+              "unsd_code" : "C160701",
+              "title" : "Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups"
+            },
+            {
+              "code" : "16.7.2",
+              "unsd_code" : "C160702",
+              "title" : "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group"
+            }
+          ]
+        },
+        {
+          "code" : "16.8",
+          "title" : "Broaden and strengthen the participation of developing countries in the institutions of global governance",
+          "indicators" : [
+            {
+              "code" : "16.8.1",
+              "unsd_code" : "C200205",
+              "title" : "Proportion of members and voting rights of developing countries in international organizations"
+            }
+          ]
+        },
+        {
+          "code" : "16.9",
+          "title" : "By 2030, provide legal identity for all, including birth registration",
+          "indicators" : [
+            {
+              "code" : "16.9.1",
+              "unsd_code" : "C160901",
+              "title" : "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age"
+            }
+          ]
+        },
+        {
+          "code" : "16.10",
+          "title" : "Significantly reduce all forms of violence and related death rates everywhere",
+          "indicators" : [
+            {
+              "code" : "16.10.1",
+              "unsd_code" : "C161001",
+              "title" : "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months"
+            },
+            {
+              "code" : "16.10.2",
+              "unsd_code" : "C161002",
+              "title" : "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information"
+            }
+          ]
+        },
+        {
+          "code" : "16.a",
+          "title" : "Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime",
+          "indicators" : [
+            {
+              "code" : "16.a.1",
+              "unsd_code" : "C160a01",
+              "title" : "Existence of independent national human rights institutions in compliance with the Paris Principles"
+            }
+          ]
+        },
+        {
+          "code" : "16.b",
+          "title" : "Promote and enforce non-discriminatory laws and policies for sustainable development",
+          "indicators" : [
+            {
+              "code" : "16.b.1",
+              "unsd_code" : "C200204",
+              "title" : "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code" : "17",
+      "title" : "Goal 17: Partnerships for the goals",
+      "description" : "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+      "image" : "https://toc.demo.scio.services/img/sdg/SDG17.png",
+      "targets": [
+        {
+          "code" : "17.10",
+          "title" : "Promote a universal, rules-based, open, non discriminatory and equitable multilateral trading system under the World Trade Organization, including through the conclusion of negotiations under its Doha Development Agenda"
+        }
+
+      ]
+    }
+  ]
+}

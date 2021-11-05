@@ -1,0 +1,196 @@
+{
+  "impact_areas": [
+    {
+      "code": "1",
+      "name": "Nutrition, health and food security",
+        "image" : "https://api.tok.dev2.scio.services/img/impact_areas/IA-01.png",
+      "description": "End hunger for all and enable affordable healthy diets for the 3 billion people who do not currently have access to safe and nutritious food. Reduce cases of foodborne illness (600 million annually) and zoonotic disease (1 billion annually) by one third.",
+      "indicators": [
+        {
+			 "code": "1",
+          "id": "1",
+          "title": "#people benefiting from relevant CGIAR innovations",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": "3000"
+        },
+        {
+			 "code": "1",
+          "id": "2",
+          "title": "#people meeting minimum dietary energy requirements",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        },
+        {
+			 "code": "1",
+          "id": "3",
+          "title": "#people meeting minimum micronutrient requirements",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        },
+        {
+			 "code": "1",
+          "id": "4",
+          "title": "#cases communicable and noncommunicable diseases",
+          "target_year": 2030,
+          "unit": "Millions",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "name": "Poverty reduction, livelihoods and jobs",
+        "image" : "https://api.tok.dev2.scio.services/img/impact_areas/IA-02.png",
+      "description": "Lift at least 500 million people living in rural areas above the extreme poverty line of US $1.90 perday (2011 PPP). Reduce by at least half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions.",
+      "indicators": [
+        {
+			      "code": "2",
+          "id": "5",
+          "title": "#people benefiting from relevant CGIAR innovations",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        },
+        {
+			      "code": "2",
+          "id": "6",
+          "title": "#people assisted to exit poverty",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "name": "Gender equality, youth and social inclusion",
+        "image" : "https://api.tok.dev2.scio.services/img/impact_areas/IA-03.png",
+      "description": "Close the gender gap in rights to economic resources, access to ownership and control over land and natural resources for over 500 million women who work in food, land & water systems. Offer rewardable opportunities to 267 million young people who are not in employment, education or training.",
+      "indicators": [
+        {
+			    "code": "3",
+          "id": "7",
+          "title": "#women’s empowerment and inclusion in the agricultural sector",
+          "target_year": 2030,
+          "unit": "",
+          "value": ""
+        },
+        {
+			    "code": "3",
+          "id": "8",
+          "title": "#women benefiting from relevant CGIAR innovations",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        },
+        {
+			    "code": "3",
+          "id": "9",
+          "title": "#youth benefiting fromrelevant CGIAR innovations",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        },
+        {
+			    "code": "3",
+          "id": "10",
+          "title": "#women assisted to exit poverty",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "name": "Climate adaptation and mitigation",
+        "image" : "https://api.tok.dev2.scio.services/img/impact_areas/IA-04.png",
+      "description": "Implement all National adaptation Plans (NAP) and Nationally Determined Contributions (NDC) to the Paris Agreement. Equip 500 million small-scale producers to be more resilient to climate shocks, with climate adaptation solutions available through national innovation systems. Turn agriculture and forest systems into a net sink for carbon by 2050, with emissions from agriculture decreasing by 1 Gt per year by 2030 and reaching a floor of 5 Gt per year by 2050.",
+      "indicators": [
+        {
+			    "code": "4",
+          "id": "11",
+          "title": "#tonnes CO2 equivalent emissions",
+          "target_year": 2030,
+          "unit": "",
+          "value": ""
+        },
+        {
+			    "code": "4",
+          "id": "12",
+          "title": "#plans with evidence of implementation",
+          "target_year": 2030,
+          "unit": "",
+          "value": ""
+        },
+        {
+			    "code": "4",
+          "id": "13",
+          "title": "#$ climate adaptation investments",
+          "target_year": 2030,
+          "unit": "Millions of dollars",
+          "value": ""
+        },
+        {
+			    "code": "4",
+          "id": "14",
+          "title": "#people benefiting from climate-adapted innovations",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "name": "Environmental health and biodiversity",
+        "image" : "https://api.tok.dev2.scio.services/img/impact_areas/IA-05.png",
+      "description": "Stay within planetary and regional environmental boundaries: consumptive water use in agriculture of under 2500 km3 per year (with a focus on the most stressed basins), zero net deforestation, nitrogen application of 90 Tg per year (with a redistribution towards low-input farming system) and increased use efficiency; and phosphorus application of 10 Tg per year. Maintain the genetic diversity of seeds, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed genebanks at the national, regional and international levels.",
+      "indicators": [
+        {
+			"code": "5",
+          "id": "15",
+          "title": "#ha under improved management",
+          "target_year": 2030,
+          "unit": "Thousands of hectares",
+          "value": ""
+        },
+        {
+			"code": "5",
+          "id": "16",
+          "title": "#km3 consumptive water use",
+          "target_year": 2030,
+          "unit": "Thousands of KM3",
+          "value": ""
+        },
+        {
+			"code": "5",
+          "id": "17",
+          "title": "#ha deforestation",
+          "target_year": 2030,
+          "unit": "Thousands of hectares",
+          "value": ""
+        },
+        {
+			"code": "5",
+          "id": "18",
+          "title": "#Tg nitrogen application",
+          "target_year": 2030,
+          "unit": "",
+          "value": ""
+        },
+        {
+			"code": "5",
+          "id": "19",
+          "title": "#plant genetic accessions available and safely duplicated",
+          "target_year": 2030,
+          "unit": "Millions of people",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}
