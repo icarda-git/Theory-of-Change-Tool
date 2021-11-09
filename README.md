@@ -6,7 +6,7 @@ It is based on the CGIAR ToC Guidance Directive and builds on the ToC Data Model
 
 The tool is built as a web application, with clearly decoupled frontend and backend components. The communication between the components is realised via a broad set of REST API calls. The calls are meant for internal usage by the tool but can be used in the future to expose information in other applications.
 
-Further documentation that contributes to the understanding of the API organisation is provided in the accompanying [Data Model Summary Report](TOC Tool Data Model.pdf) and the online documentation for the ontology that represents the model using W3C Semantic Web standards and specifications.
+Further documentation that contributes to the understanding of the API organisation is provided in the accompanying documentation for the [Conceptual Model](./model/README.md) and the [corresponding ontology](./model/toc.owl) that represents the model using W3C Semantic Web standards and specifications.
 
 ## ToC Tool Backend
 
