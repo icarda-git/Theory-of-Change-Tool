@@ -803,7 +803,7 @@ MySQL is used for storing the following data:
 
 #### GraphDB
 
-GraphDB is the triple store hosting the ToC tool knowledge base. ToC Flow and ToC information stored in the aforementioned databases is migrated to the triple store with the required transformations to conform to the ToC conceptual model. The model is expressed as a [W3C OWL ontology](./toc.owl), and described in the relevant [summative report](./toc_model.md).
+GraphDB is the triple store hosting the ToC tool knowledge base. ToC Flow and ToC information stored in the aforementioned databases is migrated to the triple store with the required transformations to conform to the ToC conceptual model. The model is expressed as a [W3C OWL ontology](./model/toc.owl), and described in the relevant [summative report](./model/README.md).
 
 #### Troubleshooting common installation Issues
 
@@ -833,12 +833,10 @@ The ToC tool consumes information on controlled entities from the [CLARISA web s
 - Entity types
 - Countries
 - UN regions
-- Action Areas
+- Action Areas, Action Area Outcomes and their respective Indicators
 - Impact Areas and Indicators
 - Sustainable Development Goals (SDG), SDG targets and SDG indicators
 
-Information on these concepts is updated via the configuration of a cron job in the environments hosting the ToC backend, which executes the relevant calls and updates the tool's databases. The process for setting up the cron job entails the following steps:
-
 ## ToC Tool API
 
-Communication with the ToC tool backend is realised via a set of RESTful API calls. The accompanying API documentation provides a comprehensive overview of the calls included in the API, including indicative examples. Note that all calls can be used only by authorised applications/users. Furthermore, they are not designed to expose any information on consuming clients, but rather to realise their respective operations in the context of a user-facing application.
+Communication with the ToC tool backend is realised via a set of RESTful API calls. The accompanying [API documentation](https://documenter.getpostman.com/view/14162026/UVBzmUKf#7d248d4a-8b1e-4746-b702-5f01470492ed) provides a comprehensive overview of the calls included in the API, including indicative examples. Note that all calls can be used only by authorised applications/users. Furthermore, they are not designed to expose any information on consuming clients, but rather to realise their respective operations in the context of a user-facing application.
