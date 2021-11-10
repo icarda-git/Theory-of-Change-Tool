@@ -812,7 +812,7 @@ MySQL is used for storing the following data:
 
 #### GraphDB
 
-GraphDB is the triple store hosting the ToC tool knowledge base. ToC Flow and ToC information stored in the aforementioned databases is migrated to the triple store with the required transformations to conform to the ToC conceptual model. The model is expressed as a [W3C OWL ontology](./model/toc.owl), and described in the relevant [summative report](./model/README.md).
+GraphDB is the triple store hosting the ToC tool knowledge base. ToC Flow and ToC information stored in the aforementioned databases is migrated to the triple store with the required transformations to conform to the ToC conceptual model. The model is expressed as a [W3C OWL ontology](./model/toc.owl), and described in the relevant [summative report](./model/README.md). A visualisation of the model as a browseable graph can be found [here](http://18.236.104.216:8080/#iri=https://raw.githubusercontent.com/icarda-git/Theory-of-Change-Tool/main/model/toc.owl).
 The knowledge graph is updated by importing the information stored in the aforementioned MongoDB and MySQL databases in GraphDB, using the relevant REST calls included in the ToC Tool API (GraphDB section).
 
 #### Troubleshooting common installation Issues
