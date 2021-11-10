@@ -49,7 +49,15 @@ Certbot can be installed by using the following guide:  https://www.digitalocean
 #### GraphDB
 
 GraphDB free version provides [a comprehensive guide](https://graphdb.ontotext.com/documentation/free/quick-start-guide.html#quick-start-guide-run-gdb-as-standalone-server) for installation and configuration. No specialised parameters need to be set for deploying and running the server.
-GraphDB Workbench is available through the `<host_url>:7200` address (the relevant port must be opened for public access). Log in with the admin account and create a repository with the following parameters.
+GraphDB Workbench is available through the `<host_url>:7200` address (the relevant port must be opened for public access). Log in with the admin account and create a GraphDB Free repository with the following parameters.
+
+1. Repository id: `toc-tool`
+2. Repository description: free text
+3. Ruleset: `OWL2-RL (Optimized)`
+
+Leave all other parameters at their default values.
+
+Connect to the repository and import the `.ttl` filed found in the tool's GitHub repository (`model/toc.ttl`) in the created triple store.
 
 ### Backend Installation
 
