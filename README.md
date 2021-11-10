@@ -49,6 +49,7 @@ Certbot can be installed by using the following guide:  https://www.digitalocean
 #### GraphDB
 
 GraphDB free version provides [a comprehensive guide](https://graphdb.ontotext.com/documentation/free/quick-start-guide.html#quick-start-guide-run-gdb-as-standalone-server) for installation and configuration. No specialised parameters need to be set for deploying and running the server.
+GraphDB Workbench is available through the `<host_url>:7200` address (the relevant port must be opened for public access). Log in with the admin account and create a repository with the following parameters.
 
 ### Backend Installation
 
@@ -804,6 +805,7 @@ MySQL is used for storing the following data:
 #### GraphDB
 
 GraphDB is the triple store hosting the ToC tool knowledge base. ToC Flow and ToC information stored in the aforementioned databases is migrated to the triple store with the required transformations to conform to the ToC conceptual model. The model is expressed as a [W3C OWL ontology](./model/toc.owl), and described in the relevant [summative report](./model/README.md).
+The knowledge graph is updated by importing the information stored in the aforementioned MongoDB and MySQL databases in GraphDB, using the relevant REST calls included in the ToC Tool API (GraphDB section).
 
 #### Troubleshooting common installation Issues
 
