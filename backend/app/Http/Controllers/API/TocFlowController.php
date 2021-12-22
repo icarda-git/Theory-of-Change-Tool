@@ -440,7 +440,7 @@ class TocFlowController extends Controller
 
 
         if ($tocFlow == null) {
-            //returns the role
+            //returns the role as well as the tocFlow data based on the ID
             return response()->json(['id' => $tocFlow->_id, 'data' => $tocFlow->data, 'toc_details' => $newToc, 'user_role' => [$userRoleIDForTeam->role_id,$userRoleDataForTeam->name]]);
 //            return response()->json(['data' => 'no toc flow was found with the specified ID']);
         }
