@@ -1,0 +1,16 @@
+.layout-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: space-between;
+}
+.footer-phantom {
+  display: block;
+  height: 60px;
+}

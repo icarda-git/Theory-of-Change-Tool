@@ -1,0 +1,60 @@
+{
+  "name": "scio-toc",
+  "version": "1.0.0",
+  "homepage": "https://scio.systems",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/core": "4.0.2",
+    "@fullcalendar/daygrid": "4.0.1",
+    "@fullcalendar/interaction": "4.0.2",
+    "@fullcalendar/timegrid": "4.0.1",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "html-to-image": "^1.8.5",
+    "i18next": "^20.2.4",
+    "nanoid": "^3.1.23",
+    "primeflex": "2.0.0",
+    "primeicons": "4.1.0",
+    "primereact": "^6.5.1",
+    "prismjs": "^1.15.0",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "react-flow-renderer": "^9.6.0",
+    "react-i18next": "^11.8.15",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "node-sass": "^6.0.1",
+    "pre-commit": "^1.2.2",
+    "react-scripts": "^4.0.3"
+  }
+}

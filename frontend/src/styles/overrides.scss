@@ -1,0 +1,195 @@
+.layout-sidebar .logo {
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  color: white;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+.bg-green {
+  background: #c8e6c9;
+}
+
+.text-green {
+  color: #256029;
+}
+
+.bg-red {
+  background: #ffcdd2;
+}
+
+.text-red {
+  color: #c63737;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.dropdown {
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.p-text-medium {
+  font-weight: 500;
+}
+
+.badge {
+  color: #fff;
+  background-color: #2196f3;
+}
+
+.badge:hover {
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.layout-sidebar-darkgray .layout-sidebar .layout-menu li a.badge-hover:hover {
+  background-color: transparent;
+}
+
+.layout-sidebar-darkgray .layout-sidebar .layout-menu li a:focus,
+.layout-sidebar-darkgray .layout-sidebar .layout-menu li .p-link:focus {
+  box-shadow: none;
+}
+
+.badge {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #2196f3;
+}
+
+.dropdown .p-button-big {
+  padding: 15px 25px;
+  width: 300px;
+
+  .p-button-label {
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .layout-static .footer-logo-container {
+    margin-left: 17rem;
+    transition: margin 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
+  }
+
+  .layout-static-inactive .footer-logo-container {
+    margin-left: 0;
+  }
+}
+
+.layout-root-menuitem .p-button.p-button-sm.add-project-btn {
+  height: 1.1785rem;
+  width: 1.1785rem;
+}
+
+.layout-root-menuitem .p-button.p-button-sm.add-project-btn .p-button-icon {
+  font-size: 0.735rem !important;
+}
+
+.widget-overview-box .overview-title {
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+}
+
+.widget-overview-box .overview-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.widget-overview-box .overview-icon i {
+  font-size: 1.25rem;
+}
+
+.layout-sidebar .logo-image {
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .layout-wrapper .layout-topbar .mobile-logo {
+    display: block;
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+
+.scrollable {
+  max-height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.text-gray {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.p-menubar .p-submenu-list {
+  z-index: 100;
+}
+
+.react-flow__edge-path {
+  stroke-width: 3 !important;
+  cursor: pointer !important;
+}
+
+.react-flow__handle {
+  width: 9px !important;
+  height: 9px !important;
+}
+
+.required {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}

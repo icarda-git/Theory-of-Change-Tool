@@ -1,0 +1,125 @@
+// Change configuration
+$gutter: 1rem;
+
+// Add dependencies
+@import 'node_modules/primeflex/primeflex.scss';
+
+// Add custom font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+$mainFont: 'Manrope', sans-serif;
+$mainFontSize: 14px;
+$labelFontWeight: 600;
+$labelFontColor: #666;
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  height: 100vh;
+}
+
+*,
+body,
+:root {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+}
+
+.layout-content.layout-content-fixed {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+// TODO: Make this better.
+.p-dropdown-label,
+.p-inputtext {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+}
+
+label {
+  color: $labelFontColor;
+  font-weight: $labelFontWeight;
+}
+
+ul.horizontal-unstyled {
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+ul.horizontal-unstyled li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-35px {
+  width: 35px;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.w-75px {
+  width: 75px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.w-125px {
+  width: 125px;
+}
+
+.w-150px {
+  width: 150px;
+}
+
+.p-menubar .p-submenu-list {
+  width: 14.5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.p-disabled,
+.p-component:disabled {
+  background: #eee;
+}
+
+@import './overrides.scss';
+@import './login.scss';
+@import './editor.scss';
+@import './register.scss';
+@import './account.scss';
+@import './footer.scss';
+@import './topbar.scss';
+@import './chart.scss';
