@@ -75,7 +75,7 @@ To create a `.env` file use: `sudo cp .env.example .env`.
 
 Once an `.env` file is created, use `sudo php artisan key:generate` to generate a application key.
 
-After the creation, the `.env` values must be configured for `MongoDB`, `MySQL` and `Auth0` connections. To do so, we use:
+After the creation, the `.env` values must be configured for `MongoDB`, `MySQL`, `Clarisa` and `Auth0` connections. To do so, we use:
 
 `sudo nano .env` or `sudo vi .env`
 
@@ -101,6 +101,9 @@ auth0_domain=auth0domain.Eu.Auth0.Com
 auth0_client_id= <AUTH0_CLIENT_ID>
 auth0_client_secret= <AUTH0_CLIENT_SECRET>
 api_identifier= <AUTH0_API_URL>
+
+CLARISA_USERNAME== <CLARISA_USERNAME>
+CLARISA_PASSWORD= <CLARISA_PASSWORD>
 ```
 
 Complete the configuration of the `.env` file and save.

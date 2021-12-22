@@ -408,7 +408,10 @@ class TocFlowController extends Controller
     {
         //
         $tocFlow = TocFlows::where('_id', $id)->first();
-
+        //gets the role ID of the user for the specific team
+        $userRoleIDForTeam = DB::table('role_user')->select('role_id')->where('user_id',auth('api')->user()->id)->where('team_id', $tocFlow->data['team_id'])->first();
+        //gets the role name and all the rest of the data for the role
+        $userRoleDataForTeam = DB::table('roles')->select('name')->where('id', $userRoleIDForTeam->role_id )->first();
 
 //        $tocsOfTocFlow = Toc::where('tocFlow_id', $tocFlow->_id)->get();
 
@@ -437,7 +440,9 @@ class TocFlowController extends Controller
 
 
         if ($tocFlow == null) {
-            return response()->json(['data' => 'no toc flow was found with the specified ID']);
+            //returns the role
+            return response()->json(['id' => $tocFlow->_id, 'data' => $tocFlow->data, 'toc_details' => $newToc, 'user_role' => [$userRoleIDForTeam->role_id,$userRoleDataForTeam->name]]);
+//            return response()->json(['data' => 'no toc flow was found with the specified ID']);
         }
         return response()->json(['id' => $tocFlow->_id, 'data' => $tocFlow->data, 'toc_details' => $newToc]);
 
