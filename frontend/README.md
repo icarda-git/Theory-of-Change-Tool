@@ -1,6 +1,6 @@
 # Theory of Change Tool Frontend
 
-This dashboard has been developed using [Diamond-React](https://www.primefaces.org/layouts/diamond-react) application framework.
+This dashboard has been developed by [SCiO](https://scio.systems) using [Diamond-React](https://www.primefaces.org/layouts/diamond-react) application framework.
 
 ## Requirements
 
