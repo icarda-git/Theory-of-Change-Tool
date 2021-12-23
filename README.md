@@ -841,4 +841,4 @@ Information on these concepts is updated via the configuration of a cron job in 
 
 ## ToC Tool API
 
-Communication with the ToC tool backend is realised via a set of RESTful API calls. The accompanying API documentation provides a comprehensive overview of the calls included in the API, including indicative examples. Note that all calls can be used only by authorised applications/users. Furthermore, they are not designed to expose any information on consuming clients, but rather to realise their respective operations in the context of a user-facing application.
+Communication with the ToC tool backend is realised via a set of RESTful API calls. The [accompanying API documentation](https://documenter.getpostman.com/view/14162026/UVBzmUKf) provides a comprehensive overview of the calls included in the API, including indicative examples. Note that all calls can be used only by authorised applications/users. Furthermore, they are not designed to expose any information on consuming clients, but rather to realise their respective operations in the context of a user-facing application.
