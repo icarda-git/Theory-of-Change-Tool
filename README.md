@@ -6,8 +6,6 @@ It has been developed by [SCiO](https://scio.systems) based on the CGIAR ToC Gui
 
 The tool is built as a web application, with clearly decoupled frontend and backend components. The communication between the components is realised via a broad set of REST API calls. The calls are meant for internal usage by the tool but can be used in the future to expose information in other applications.
 
-Further documentation that contributes to the understanding of the API organisation is provided in the accompanying [Data Model Summary Report](TOC Tool Data Model.pdf) and the online documentation for the ontology that represents the model using W3C Semantic Web standards and specifications.
-
 ## ToC Tool Backend
 
 The section provide instructions on the deployment and configuration of the tool's backend components.
