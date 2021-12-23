@@ -2,7 +2,7 @@
 
 The Theory of Change Tool aims to formalize and streamline the creation of Theories of Change (ToCs) for CGIAR activities at different levels of maturity.
 
-It is based on the CGIAR ToC Guidance Directive and builds on the ToC Data Model informing the structure of its knowledge base.
+It has been developed by [SCiO](https://scio.systems) based on the CGIAR ToC Guidance Directive and builds on the ToC Data Model informing the structure of its knowledge base.
 
 The tool is built as a web application, with clearly decoupled frontend and backend components. The communication between the components is realised via a broad set of REST API calls. The calls are meant for internal usage by the tool but can be used in the future to expose information in other applications.
 
